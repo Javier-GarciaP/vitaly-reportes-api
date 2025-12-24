@@ -41,6 +41,7 @@ public class ReporteController {
 
             // 4. MAPEO DINÁMICO DE DATOS SEGÚN EL EXAMEN
             ObjectMapper mapper = new ObjectMapper();
+            mapper.configure(com.fasterxml.jackson.databind.DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
             Object dataInstance;
             String examen = tipo.toLowerCase();
 
