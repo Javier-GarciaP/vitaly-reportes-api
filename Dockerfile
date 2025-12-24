@@ -4,15 +4,15 @@ WORKDIR /app
 COPY . .
 RUN mvn clean package -DskipTests
 
-# Etapa 2: Ejecución (Alpine es mucho más ligero y estable)
+# Etapa 2: Ejecución
 FROM eclipse-temurin:21-jdk-alpine
 
-# Instalamos las fuentes necesarias usando 'apk' (gestor de Alpine)
-# Estas librerías son las equivalentes para que JasperReports funcione
+# Instalamos las fuentes necesarias para JasperReports
 RUN apk add --no-cache fontconfig ttf-dejavu
 
 WORKDIR /app
-COPY --from=build /target/*.jar app.jar
+# CAMBIO AQUÍ: Agregamos /app/ antes de target
+COPY --from=build /app/target/*.jar app.jar
 
 # Modo Headless para JasperReports
 ENV JAVA_OPTS="-Djava.awt.headless=true"
