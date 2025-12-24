@@ -7,7 +7,7 @@ RUN mvn clean package -DskipTests
 # Etapa 2: Ejecución (Runtime)
 FROM eclipse-temurin:21-jdk-jammy
 
-# INSTALACIÓN DE FUENTES Y LIBRERÍAS GRÁFICAS (Crítico para JasperReports)
+# INSTALACIÓN DE FUENTES Y LIBRERÍAS GRÁFICAS Crítico para JasperReports
 # libfontconfig1 y ttf-dejavu permiten que Jasper dibuje el PDF y use fuentes básicas
 RUN apt-get update && apt-get install -y \
     libfontconfig1 \
