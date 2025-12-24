@@ -1,0 +1,468 @@
+<!-- Created with Jaspersoft Studio version 7.0.3.final using JasperReports Library version 7.0.3-41034ca841d452f3305ba55b9042260aaa1ab5dd  -->
+<jasperReport name="Quimica" language="java" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="5db3ed45-0617-4357-9e3c-7e823ffc6e67">
+	<query language="sql"><![CDATA[]]></query>
+	<field name="nombre" class="java.lang.String"/>
+	<field name="cedula" class="java.lang.String"/>
+	<field name="edad" class="java.lang.String"/>
+	<field name="Glicemia" class="java.lang.String"/>
+	<field name="Urea" class="java.lang.String"/>
+	<field name="Creatinina" class="java.lang.String"/>
+	<field name="Colesterol" class="java.lang.String"/>
+	<field name="ColestHDL" class="java.lang.String"/>
+	<field name="Trigliceridos" class="java.lang.String"/>
+	<field name="AcUrico" class="java.lang.String"/>
+	<field name="Calcio" class="java.lang.String"/>
+	<field name="Fosforo" class="java.lang.String"/>
+	<field name="ProteinasTot" class="java.lang.String"/>
+	<field name="Albumina" class="java.lang.String"/>
+	<field name="Globulinas" class="java.lang.String"/>
+	<field name="RelacionAG" class="java.lang.String"/>
+	<field name="TGO" class="java.lang.String"/>
+	<field name="TGP" class="java.lang.String"/>
+	<field name="BilirrTotal" class="java.lang.String"/>
+	<field name="BilirrDirecta" class="java.lang.String"/>
+	<field name="BilirrIndirecta" class="java.lang.String"/>
+	<field name="FosfAlc" class="java.lang.String"/>
+	<field name="LDH" class="java.lang.String"/>
+	<field name="Amilasa" class="java.lang.String"/>
+	<field name="Observacion" class="java.lang.String"/>
+	<background splitType="Stretch"/>
+	<title height="501" splitType="Stretch">
+		<element kind="staticText" uuid="9f26d9df-f917-440b-866b-dfa6a3f7dc05" x="0" y="120" width="360" height="28" forecolor="#5C1D1F" fontSize="18.0" bold="true" hTextAlign="Center" vTextAlign="Top">
+			<text><![CDATA[Química]]></text>
+		</element>
+		<element kind="staticText" uuid="02fbada0-4eb4-456c-9a93-f7a27e037639" x="0" y="0" width="360" height="20" forecolor="#5C1D1F" fontSize="15.0" bold="true" hTextAlign="Center" vTextAlign="Top">
+			<text><![CDATA[Datos del Paciente]]></text>
+		</element>
+		<element kind="textField" uuid="338caa3a-b273-4a71-9ac1-27614facddb2" x="50" y="50" width="310" height="20" vTextAlign="Middle">
+			<expression><![CDATA[$F{nombre}]]></expression>
+		</element>
+		<element kind="textField" uuid="97b4d682-a33a-4a44-be6a-94e2e58dccf1" x="50" y="70" width="310" height="20" vTextAlign="Middle">
+			<expression><![CDATA[$F{cedula}]]></expression>
+		</element>
+		<element kind="textField" uuid="a6a4c07e-6a9e-4c43-980b-331cfeb36647" x="50" y="90" width="310" height="20" vTextAlign="Middle">
+			<expression><![CDATA[$F{edad}]]></expression>
+		</element>
+		<element kind="textField" uuid="6806b6d2-bce0-4ab1-bd43-297b28576b46" x="50" y="30" width="310" height="20" pattern="MMMMM dd, yyyy" vTextAlign="Middle">
+			<expression><![CDATA[new java.util.Date()]]></expression>
+		</element>
+		<element kind="staticText" uuid="ca86d683-6042-474b-ad9f-df5d2ede9fba" x="0" y="50" width="50" height="20" fontSize="10.0" bold="true" hTextAlign="Left" vTextAlign="Middle">
+			<text><![CDATA[Nombre:]]></text>
+		</element>
+		<element kind="staticText" uuid="08861b37-7eb1-4384-b898-1c9ad41a7646" x="0" y="30" width="50" height="20" fontSize="10.0" bold="true" hTextAlign="Left" vTextAlign="Middle">
+			<text><![CDATA[Fecha:]]></text>
+		</element>
+		<element kind="staticText" uuid="6e2b3d1f-8189-4555-ab37-d4743fe4effb" x="0" y="70" width="50" height="20" fontSize="10.0" bold="true" vTextAlign="Middle">
+			<text><![CDATA[Cédula:]]></text>
+		</element>
+		<element kind="staticText" uuid="255910a9-2fe6-43b2-a4af-85390f780474" x="0" y="90" width="50" height="20" fontSize="10.0" bold="true" vTextAlign="Middle">
+			<text><![CDATA[Edad:]]></text>
+		</element>
+		<element kind="line" uuid="0421e63c-2a18-4711-9348-e2233b2b2570" x="0" y="148" width="360" height="1" forecolor="#4A90E2"/>
+		<element kind="staticText" uuid="c78ab75b-324d-46c6-8318-389d2a378951" x="0" y="160" width="120" height="20" forecolor="#5C1D1F" fontSize="12.0" bold="true" hTextAlign="Left" vTextAlign="Top">
+			<text><![CDATA[Examen]]></text>
+		</element>
+		<element kind="staticText" uuid="0a6ee1af-74eb-4f6b-b886-d10e9d9d4e74" x="120" y="160" width="120" height="20" forecolor="#5C1D1F" fontSize="12.0" bold="true" hTextAlign="Left" vTextAlign="Top">
+			<text><![CDATA[Resultado]]></text>
+		</element>
+		<element kind="staticText" uuid="0e7cf80d-7976-490b-ba90-c322c1000964" x="240" y="160" width="120" height="20" forecolor="#5C1D1F" fontSize="12.0" bold="true" hTextAlign="Left" vTextAlign="Top">
+			<text><![CDATA[Valor de Referencia]]></text>
+		</element>
+		<element kind="line" uuid="62fc8d16-3a20-4cee-b25a-75c49409cd5d" x="0" y="180" width="360" height="1" forecolor="#4A90E2"/>
+		<element kind="frame" uuid="bd4ab9e9-6f29-41c3-8698-36b4eb941b9c" x="0" y="181" width="360" height="319">
+			<element kind="staticText" uuid="46d9b408-2dfc-4da0-9d4e-8e5d84e4c007" positionType="Float" stretchType="ContainerBottom" x="0" y="10" width="120" height="13" fontSize="10.0" removeLineWhenBlank="true" bold="true">
+				<printWhenExpression><![CDATA[$F{Glicemia} != null]]></printWhenExpression>
+				<text><![CDATA[Glicemia]]></text>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			</element>
+			<element kind="textField" uuid="1d6ec01e-4bca-4515-ac4f-d9fa3edcc01c" positionType="Float" stretchType="ContainerBottom" x="120" y="10" width="120" height="13" fontSize="10.0" removeLineWhenBlank="true">
+				<printWhenExpression><![CDATA[$F{Glicemia} != null]]></printWhenExpression>
+				<expression><![CDATA[$F{Glicemia}]]></expression>
+			</element>
+			<element kind="staticText" uuid="60e31685-f562-40d2-8057-48bcad8794e6" positionType="Float" stretchType="ContainerBottom" x="240" y="10" width="120" height="13" fontSize="10.0" removeLineWhenBlank="true">
+				<printWhenExpression><![CDATA[$F{Glicemia} != null]]></printWhenExpression>
+				<text><![CDATA[70 - 110 mg/dL]]></text>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			</element>
+			<element kind="line" uuid="d0dfb741-927f-4dfc-bcf6-93252ab3894c" positionType="Float" stretchType="ContainerBottom" x="0" y="23" width="360" height="1" removeLineWhenBlank="true">
+				<printWhenExpression><![CDATA[$F{Glicemia} != null]]></printWhenExpression>
+				<pen lineWidth="0.5" lineStyle="Dashed"/>
+			</element>
+			<element kind="staticText" uuid="b147b6c6-27da-4058-a7dc-82cd5b15f3f5" positionType="Float" stretchType="ContainerBottom" x="0" y="24" width="120" height="13" fontSize="10.0" removeLineWhenBlank="true" bold="true">
+				<printWhenExpression><![CDATA[$F{Urea} != null]]></printWhenExpression>
+				<text><![CDATA[Urea]]></text>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			</element>
+			<element kind="textField" uuid="afb0037b-b341-4768-905e-2526e609e849" positionType="Float" stretchType="ContainerBottom" x="120" y="24" width="120" height="13" fontSize="10.0" removeLineWhenBlank="true">
+				<printWhenExpression><![CDATA[$F{Urea} != null]]></printWhenExpression>
+				<expression><![CDATA[$F{Urea}]]></expression>
+			</element>
+			<element kind="staticText" uuid="11b6a0c0-e796-48b1-873d-a7a19f71a8be" positionType="Float" stretchType="ContainerBottom" x="240" y="24" width="120" height="13" fontSize="10.0" removeLineWhenBlank="true">
+				<printWhenExpression><![CDATA[$F{Urea} != null]]></printWhenExpression>
+				<text><![CDATA[17 - 45 mg/dL]]></text>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			</element>
+			<element kind="line" uuid="fad51f6c-5bbe-44d6-9742-e02acad46b51" positionType="Float" stretchType="ContainerBottom" x="0" y="37" width="360" height="1" removeLineWhenBlank="true">
+				<printWhenExpression><![CDATA[$F{Urea} != null]]></printWhenExpression>
+				<pen lineWidth="0.5" lineStyle="Dashed"/>
+			</element>
+			<element kind="staticText" uuid="79c5c755-63ca-4bc6-9bdf-8918b004fac1" positionType="Float" stretchType="ContainerBottom" x="0" y="38" width="120" height="13" fontSize="10.0" removeLineWhenBlank="true" bold="true">
+				<printWhenExpression><![CDATA[$F{Creatinina} != null]]></printWhenExpression>
+				<text><![CDATA[Creatinina]]></text>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			</element>
+			<element kind="textField" uuid="07c06ec4-9814-4fb6-8600-1035c3270a1f" positionType="Float" stretchType="ContainerBottom" x="120" y="38" width="120" height="13" fontSize="10.0" removeLineWhenBlank="true">
+				<printWhenExpression><![CDATA[$F{Creatinina} != null]]></printWhenExpression>
+				<expression><![CDATA[$F{Creatinina}]]></expression>
+			</element>
+			<element kind="staticText" uuid="83b98586-afa9-41cf-b8c7-f3b644efa343" positionType="Float" stretchType="ContainerBottom" x="240" y="38" width="120" height="13" fontSize="10.0" removeLineWhenBlank="true">
+				<printWhenExpression><![CDATA[$F{Creatinina} != null]]></printWhenExpression>
+				<text><![CDATA[0,6 - 1,4 mg/dL]]></text>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			</element>
+			<element kind="line" uuid="e59cd2d1-99b3-43a1-af47-5336b447346f" positionType="Float" stretchType="ContainerBottom" x="0" y="51" width="360" height="1" removeLineWhenBlank="true">
+				<printWhenExpression><![CDATA[$F{Creatinina} != null]]></printWhenExpression>
+				<pen lineWidth="0.5" lineStyle="Dashed"/>
+			</element>
+			<element kind="staticText" uuid="095c7c43-7b0a-4fef-9472-2e8649e5bb7b" positionType="Float" stretchType="ContainerBottom" x="0" y="52" width="120" height="13" fontSize="10.0" removeLineWhenBlank="true" bold="true">
+				<printWhenExpression><![CDATA[$F{Colesterol} != null]]></printWhenExpression>
+				<text><![CDATA[Colesterol]]></text>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			</element>
+			<element kind="textField" uuid="cfc4423c-a67a-44a2-bb22-da571f5d4b36" positionType="Float" stretchType="ContainerBottom" x="120" y="52" width="120" height="13" fontSize="10.0" removeLineWhenBlank="true">
+				<printWhenExpression><![CDATA[$F{Colesterol} != null]]></printWhenExpression>
+				<expression><![CDATA[$F{Colesterol}]]></expression>
+			</element>
+			<element kind="staticText" uuid="94878bff-b838-4d5e-a719-65488b676bc9" positionType="Float" stretchType="ContainerBottom" x="240" y="52" width="120" height="13" fontSize="10.0" removeLineWhenBlank="true">
+				<printWhenExpression><![CDATA[$F{Colesterol} != null]]></printWhenExpression>
+				<text><![CDATA[Hasta 200 mg/dL]]></text>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			</element>
+			<element kind="line" uuid="be3bd7d6-ef35-4b0e-ad50-d50f7c645fbf" positionType="Float" stretchType="ContainerBottom" x="0" y="65" width="360" height="1" removeLineWhenBlank="true">
+				<printWhenExpression><![CDATA[$F{Colesterol} != null]]></printWhenExpression>
+				<pen lineWidth="0.5" lineStyle="Dashed"/>
+			</element>
+			<element kind="staticText" uuid="db76ccbd-abd3-4471-92a6-22514ae02547" positionType="Float" stretchType="ContainerBottom" x="0" y="66" width="120" height="13" fontSize="10.0" removeLineWhenBlank="true" bold="true">
+				<printWhenExpression><![CDATA[$F{ColestHDL} != null]]></printWhenExpression>
+				<text><![CDATA[Colest HDL]]></text>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			</element>
+			<element kind="textField" uuid="1ca54f44-c622-4f59-9498-3170cc12113a" positionType="Float" stretchType="ContainerBottom" x="120" y="66" width="120" height="13" fontSize="10.0" removeLineWhenBlank="true">
+				<printWhenExpression><![CDATA[$F{ColestHDL} != null]]></printWhenExpression>
+				<expression><![CDATA[$F{ColestHDL}]]></expression>
+			</element>
+			<element kind="staticText" uuid="f87a8487-84ad-40a2-9428-d50a1e580d5d" positionType="Float" stretchType="ContainerBottom" x="240" y="66" width="120" height="13" fontSize="10.0" removeLineWhenBlank="true">
+				<printWhenExpression><![CDATA[$F{ColestHDL} != null]]></printWhenExpression>
+				<text><![CDATA[27 - 78 mg/dL]]></text>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			</element>
+			<element kind="line" uuid="419ac71c-feda-45cd-9743-28dc604462e4" positionType="Float" stretchType="ContainerBottom" x="0" y="79" width="360" height="1" removeLineWhenBlank="true">
+				<printWhenExpression><![CDATA[$F{ColestHDL} != null]]></printWhenExpression>
+				<pen lineWidth="0.5" lineStyle="Dashed"/>
+			</element>
+			<element kind="staticText" uuid="aa271cb5-2c9a-4baf-b424-36860519f741" positionType="Float" stretchType="ContainerBottom" x="0" y="80" width="120" height="13" fontSize="10.0" removeLineWhenBlank="true" bold="true">
+				<printWhenExpression><![CDATA[$F{Trigliceridos} != null]]></printWhenExpression>
+				<text><![CDATA[Trigliceridos]]></text>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			</element>
+			<element kind="textField" uuid="595a5d8e-989b-4069-86d8-7c0b85f9e4d3" positionType="Float" stretchType="ContainerBottom" x="120" y="80" width="120" height="13" fontSize="10.0" removeLineWhenBlank="true">
+				<printWhenExpression><![CDATA[$F{Trigliceridos} != null]]></printWhenExpression>
+				<expression><![CDATA[$F{Trigliceridos}]]></expression>
+			</element>
+			<element kind="staticText" uuid="fb38f63b-8493-4f01-87a0-dee65c68649e" positionType="Float" stretchType="ContainerBottom" x="240" y="80" width="120" height="13" fontSize="10.0" removeLineWhenBlank="true">
+				<printWhenExpression><![CDATA[$F{Trigliceridos} != null]]></printWhenExpression>
+				<text><![CDATA[36 - 150 mg/dL]]></text>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			</element>
+			<element kind="line" uuid="815f12fa-c1ea-4029-9cf8-44e4df36be61" positionType="Float" stretchType="ContainerBottom" x="0" y="93" width="360" height="1" removeLineWhenBlank="true">
+				<printWhenExpression><![CDATA[$F{Trigliceridos} != null]]></printWhenExpression>
+				<pen lineWidth="0.5" lineStyle="Dashed"/>
+			</element>
+			<element kind="staticText" uuid="3ae8be42-20c8-44bc-a25b-6b9df2799927" positionType="Float" stretchType="ContainerBottom" x="0" y="94" width="120" height="13" fontSize="10.0" removeLineWhenBlank="true" bold="true">
+				<printWhenExpression><![CDATA[$F{AcUrico} != null]]></printWhenExpression>
+				<text><![CDATA[Ac Urico]]></text>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			</element>
+			<element kind="textField" uuid="9533bcfc-5382-4f26-a60f-bb5b44bda5d3" positionType="Float" stretchType="ContainerBottom" x="120" y="94" width="120" height="13" fontSize="10.0" removeLineWhenBlank="true">
+				<printWhenExpression><![CDATA[$F{AcUrico} != null]]></printWhenExpression>
+				<expression><![CDATA[$F{AcUrico}]]></expression>
+			</element>
+			<element kind="staticText" uuid="0f211370-1ad9-4e86-9af4-b35526b0ce51" positionType="Float" stretchType="ContainerBottom" x="240" y="94" width="120" height="13" fontSize="10.0" removeLineWhenBlank="true">
+				<printWhenExpression><![CDATA[$F{AcUrico} != null]]></printWhenExpression>
+				<text><![CDATA[1,5 - 6,0 mg/dL]]></text>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			</element>
+			<element kind="line" uuid="495968a4-782c-4866-8b82-5148fb813a56" positionType="Float" stretchType="ContainerBottom" x="0" y="107" width="360" height="1" removeLineWhenBlank="true">
+				<printWhenExpression><![CDATA[$F{AcUrico} != null]]></printWhenExpression>
+				<pen lineWidth="0.5" lineStyle="Dashed"/>
+			</element>
+			<element kind="staticText" uuid="7e136fb7-86a5-42bd-b277-7437627d4d91" positionType="Float" stretchType="ContainerBottom" x="0" y="108" width="120" height="13" fontSize="10.0" removeLineWhenBlank="true" bold="true">
+				<printWhenExpression><![CDATA[$F{Calcio} != null]]></printWhenExpression>
+				<text><![CDATA[Calcio]]></text>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			</element>
+			<element kind="textField" uuid="2f4484f8-b32d-4af9-8070-b708a6ca3495" positionType="Float" stretchType="ContainerBottom" x="120" y="108" width="120" height="13" fontSize="10.0" removeLineWhenBlank="true">
+				<printWhenExpression><![CDATA[$F{Calcio} != null]]></printWhenExpression>
+				<expression><![CDATA[$F{Calcio}]]></expression>
+			</element>
+			<element kind="staticText" uuid="a1cee2c5-3190-44e9-9793-ecc6d805e5cf" positionType="Float" stretchType="ContainerBottom" x="240" y="108" width="120" height="13" fontSize="10.0" removeLineWhenBlank="true">
+				<printWhenExpression><![CDATA[$F{Calcio} != null]]></printWhenExpression>
+				<text><![CDATA[8,5 - 10,5 mg/dL]]></text>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			</element>
+			<element kind="line" uuid="fb5da5ea-6cd4-498b-b98a-14bbc09279ff" positionType="Float" stretchType="ContainerBottom" x="0" y="121" width="360" height="1" removeLineWhenBlank="true">
+				<printWhenExpression><![CDATA[$F{Calcio} != null]]></printWhenExpression>
+				<pen lineWidth="0.5" lineStyle="Dashed"/>
+			</element>
+			<element kind="staticText" uuid="af4ec83d-779d-468a-a016-95897ff56808" positionType="Float" stretchType="ContainerBottom" x="0" y="122" width="120" height="13" fontSize="10.0" removeLineWhenBlank="true" bold="true">
+				<printWhenExpression><![CDATA[$F{Fosforo} != null]]></printWhenExpression>
+				<text><![CDATA[Fosforo]]></text>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			</element>
+			<element kind="staticText" uuid="781137e1-cf7c-40d3-a35e-4f108949f835" positionType="Float" stretchType="ContainerBottom" x="240" y="122" width="120" height="13" fontSize="10.0" removeLineWhenBlank="true">
+				<printWhenExpression><![CDATA[$F{Fosforo} != null]]></printWhenExpression>
+				<text><![CDATA[2,5 - 4,8 mg/dL]]></text>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			</element>
+			<element kind="line" uuid="9273f64d-5b55-4ea3-856e-a7d2674cca31" positionType="Float" stretchType="ContainerBottom" x="0" y="135" width="360" height="1" removeLineWhenBlank="true">
+				<printWhenExpression><![CDATA[$F{Fosforo} != null]]></printWhenExpression>
+				<pen lineWidth="0.5" lineStyle="Dashed"/>
+			</element>
+			<element kind="staticText" uuid="d21836c0-fd84-41bf-81b6-c115af2a8f2a" positionType="Float" stretchType="ContainerBottom" x="0" y="136" width="120" height="13" fontSize="10.0" removeLineWhenBlank="true" bold="true">
+				<printWhenExpression><![CDATA[$F{ProteinasTot} != null]]></printWhenExpression>
+				<text><![CDATA[Proteinas Tot]]></text>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			</element>
+			<element kind="textField" uuid="21878da6-26d2-472b-b004-35459b579d0d" positionType="Float" stretchType="ContainerBottom" x="120" y="136" width="120" height="13" fontSize="10.0" removeLineWhenBlank="true">
+				<printWhenExpression><![CDATA[$F{ProteinasTot} != null]]></printWhenExpression>
+				<expression><![CDATA[$F{ProteinasTot}]]></expression>
+			</element>
+			<element kind="staticText" uuid="37b8d353-294e-4044-b1ce-ba7eff6e2a39" positionType="Float" stretchType="ContainerBottom" x="240" y="136" width="120" height="13" fontSize="10.0" removeLineWhenBlank="true">
+				<printWhenExpression><![CDATA[$F{ProteinasTot} != null]]></printWhenExpression>
+				<text><![CDATA[6,3 - 8,5 g/dl]]></text>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			</element>
+			<element kind="line" uuid="25c9618f-584e-4158-9877-437292cc7974" positionType="Float" stretchType="ContainerBottom" x="0" y="149" width="360" height="1" removeLineWhenBlank="true">
+				<printWhenExpression><![CDATA[$F{ProteinasTot} != null]]></printWhenExpression>
+				<pen lineWidth="0.5" lineStyle="Dashed"/>
+			</element>
+			<element kind="staticText" uuid="ed9b1dab-a7f7-4e7b-a380-3fde87eccc7f" positionType="Float" stretchType="ContainerBottom" x="0" y="150" width="120" height="13" fontSize="10.0" removeLineWhenBlank="true" bold="true">
+				<printWhenExpression><![CDATA[$F{Albumina} != null]]></printWhenExpression>
+				<text><![CDATA[Albúmina]]></text>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			</element>
+			<element kind="textField" uuid="773ad045-3179-44c4-9863-c5352e01fe60" positionType="Float" stretchType="ContainerBottom" x="120" y="150" width="120" height="13" fontSize="10.0" removeLineWhenBlank="true">
+				<printWhenExpression><![CDATA[$F{Albumina} != null]]></printWhenExpression>
+				<expression><![CDATA[$F{Albumina}]]></expression>
+			</element>
+			<element kind="staticText" uuid="3afec7fd-c969-4687-94ce-dc75c4d089b7" positionType="Float" stretchType="ContainerBottom" x="240" y="150" width="120" height="13" fontSize="10.0" removeLineWhenBlank="true">
+				<printWhenExpression><![CDATA[$F{Albumina} != null]]></printWhenExpression>
+				<text><![CDATA[3,5 - 5,1 g/dl]]></text>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			</element>
+			<element kind="line" uuid="12408b77-5529-4239-a392-a9f95c06f577" positionType="Float" stretchType="ContainerBottom" x="0" y="163" width="360" height="1" removeLineWhenBlank="true">
+				<printWhenExpression><![CDATA[$F{Albumina} != null]]></printWhenExpression>
+				<pen lineWidth="0.5" lineStyle="Dashed"/>
+			</element>
+			<element kind="staticText" uuid="419b4aea-544c-40ab-b7cc-848f30c4a325" positionType="Float" stretchType="ContainerBottom" x="0" y="164" width="120" height="13" fontSize="10.0" removeLineWhenBlank="true" bold="true">
+				<printWhenExpression><![CDATA[$F{Globulinas} != null]]></printWhenExpression>
+				<text><![CDATA[Globulinas]]></text>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			</element>
+			<element kind="textField" uuid="bd17447b-9421-4704-bada-2176c5998416" positionType="Float" stretchType="ContainerBottom" x="120" y="164" width="120" height="13" fontSize="10.0" removeLineWhenBlank="true">
+				<printWhenExpression><![CDATA[$F{Globulinas} != null]]></printWhenExpression>
+				<expression><![CDATA[$F{Globulinas}]]></expression>
+			</element>
+			<element kind="staticText" uuid="57c5b2e4-2580-4520-8316-3ae646735328" positionType="Float" stretchType="ContainerBottom" x="240" y="164" width="120" height="13" fontSize="10.0" removeLineWhenBlank="true">
+				<printWhenExpression><![CDATA[$F{Globulinas} != null]]></printWhenExpression>
+				<text><![CDATA[]]></text>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			</element>
+			<element kind="line" uuid="66484722-662a-458f-8593-063b69f7900d" positionType="Float" stretchType="ContainerBottom" x="0" y="177" width="360" height="1" removeLineWhenBlank="true">
+				<printWhenExpression><![CDATA[$F{Globulinas} != null]]></printWhenExpression>
+				<pen lineWidth="0.5" lineStyle="Dashed"/>
+			</element>
+			<element kind="staticText" uuid="7571b716-8e71-4fbf-8468-e99e6e9fcc87" positionType="Float" stretchType="ContainerBottom" x="0" y="178" width="120" height="13" fontSize="10.0" removeLineWhenBlank="true" bold="true">
+				<printWhenExpression><![CDATA[$F{RelacionAG} != null]]></printWhenExpression>
+				<text><![CDATA[Relación A/G]]></text>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			</element>
+			<element kind="textField" uuid="5034cd82-7deb-40c1-af9a-40c81600bf27" positionType="Float" stretchType="ContainerBottom" x="120" y="178" width="120" height="13" fontSize="10.0" removeLineWhenBlank="true">
+				<printWhenExpression><![CDATA[$F{RelacionAG} != null]]></printWhenExpression>
+				<expression><![CDATA[$F{RelacionAG}]]></expression>
+			</element>
+			<element kind="staticText" uuid="a7b407e7-55de-4683-a592-c5d781909a69" positionType="Float" stretchType="ContainerBottom" x="240" y="178" width="120" height="13" fontSize="10.0" removeLineWhenBlank="true">
+				<printWhenExpression><![CDATA[$F{RelacionAG} != null]]></printWhenExpression>
+				<text><![CDATA[1,2 - 2,2]]></text>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			</element>
+			<element kind="line" uuid="ce35cf86-407a-4707-89e6-cad82ace3e85" positionType="Float" stretchType="ContainerBottom" x="0" y="191" width="360" height="1" removeLineWhenBlank="true">
+				<printWhenExpression><![CDATA[$F{RelacionAG} != null]]></printWhenExpression>
+				<pen lineWidth="0.5" lineStyle="Dashed"/>
+			</element>
+			<element kind="staticText" uuid="73d5fb25-2cac-4f2f-bb73-90dd7cb8d275" positionType="Float" stretchType="ContainerBottom" x="0" y="192" width="120" height="13" fontSize="10.0" removeLineWhenBlank="true" bold="true">
+				<printWhenExpression><![CDATA[$F{TGO} != null]]></printWhenExpression>
+				<text><![CDATA[TGO]]></text>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			</element>
+			<element kind="textField" uuid="de50a7cc-2ab7-47d8-a123-e88f847c6d96" positionType="Float" stretchType="ContainerBottom" x="120" y="192" width="120" height="13" fontSize="10.0" removeLineWhenBlank="true">
+				<printWhenExpression><![CDATA[$F{TGO} != null]]></printWhenExpression>
+				<expression><![CDATA[$F{TGO}]]></expression>
+			</element>
+			<element kind="staticText" uuid="2ecdcc16-6683-461f-9366-fde11e73fe48" positionType="Float" stretchType="ContainerBottom" x="240" y="192" width="120" height="13" fontSize="10.0" removeLineWhenBlank="true">
+				<printWhenExpression><![CDATA[$F{TGO} != null]]></printWhenExpression>
+				<text><![CDATA[5 - 34 U/L]]></text>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			</element>
+			<element kind="line" uuid="29f009b0-f29f-4b72-8e4b-78b90f9027aa" positionType="Float" stretchType="ContainerBottom" x="0" y="205" width="360" height="1" removeLineWhenBlank="true">
+				<printWhenExpression><![CDATA[$F{TGO} != null]]></printWhenExpression>
+				<pen lineWidth="0.5" lineStyle="Dashed"/>
+			</element>
+			<element kind="staticText" uuid="a1e986c5-2d22-478a-97b5-8a79d8a4e642" positionType="Float" stretchType="ContainerBottom" x="0" y="206" width="120" height="13" fontSize="10.0" removeLineWhenBlank="true" bold="true">
+				<printWhenExpression><![CDATA[$F{TGP} != null]]></printWhenExpression>
+				<text><![CDATA[TGP]]></text>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			</element>
+			<element kind="textField" uuid="495566f2-e5f8-43af-88d4-3b4012b3f9a3" positionType="Float" stretchType="ContainerBottom" x="120" y="206" width="120" height="13" fontSize="10.0" removeLineWhenBlank="true">
+				<printWhenExpression><![CDATA[$F{TGP} != null]]></printWhenExpression>
+				<expression><![CDATA[$F{TGP}]]></expression>
+			</element>
+			<element kind="staticText" uuid="1ce26fdc-1856-4faa-a732-80c75adcc4d3" positionType="Float" stretchType="ContainerBottom" x="240" y="206" width="120" height="13" fontSize="10.0" removeLineWhenBlank="true">
+				<printWhenExpression><![CDATA[$F{TGP} != null]]></printWhenExpression>
+				<text><![CDATA[Hasta 36 U/L]]></text>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			</element>
+			<element kind="line" uuid="a30a3f8d-4055-454e-ad70-47bf46f4cf2e" positionType="Float" stretchType="ContainerBottom" x="0" y="219" width="360" height="1" removeLineWhenBlank="true">
+				<printWhenExpression><![CDATA[$F{TGP} != null]]></printWhenExpression>
+				<pen lineWidth="0.5" lineStyle="Dashed"/>
+			</element>
+			<element kind="staticText" uuid="655efba0-7607-4c80-b067-d1d67df757dc" positionType="Float" stretchType="ContainerBottom" x="0" y="220" width="120" height="13" fontSize="10.0" removeLineWhenBlank="true" bold="true">
+				<printWhenExpression><![CDATA[$F{BilirrTotal} != null]]></printWhenExpression>
+				<text><![CDATA[Bilirr Total]]></text>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			</element>
+			<element kind="textField" uuid="9df51656-6878-4fa6-b48a-18edb1e26e54" positionType="Float" stretchType="ContainerBottom" x="120" y="220" width="120" height="13" fontSize="10.0" removeLineWhenBlank="true">
+				<printWhenExpression><![CDATA[$F{BilirrTotal} != null]]></printWhenExpression>
+				<expression><![CDATA[$F{BilirrTotal}]]></expression>
+			</element>
+			<element kind="staticText" uuid="afffb918-4d12-402e-8fa7-14b41d996b2e" positionType="Float" stretchType="ContainerBottom" x="240" y="220" width="120" height="13" fontSize="10.0" removeLineWhenBlank="true">
+				<printWhenExpression><![CDATA[$F{BilirrTotal} != null]]></printWhenExpression>
+				<text><![CDATA[Hasta 1,5 mg/dL]]></text>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			</element>
+			<element kind="line" uuid="36ea08c0-586a-4784-b372-3b426b656400" positionType="Float" stretchType="ContainerBottom" x="0" y="233" width="360" height="1" removeLineWhenBlank="true">
+				<printWhenExpression><![CDATA[$F{BilirrTotal} != null]]></printWhenExpression>
+				<pen lineWidth="0.5" lineStyle="Dashed"/>
+			</element>
+			<element kind="staticText" uuid="b6c86bcd-71ea-4905-9eb7-7351066566d1" positionType="Float" stretchType="ContainerBottom" x="0" y="234" width="120" height="13" fontSize="10.0" removeLineWhenBlank="true" bold="true">
+				<printWhenExpression><![CDATA[$F{BilirrDirecta} != null]]></printWhenExpression>
+				<text><![CDATA[Bilirr Directa]]></text>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			</element>
+			<element kind="textField" uuid="689b44dd-0b01-4a42-8433-404349527864" positionType="Float" stretchType="ContainerBottom" x="120" y="234" width="120" height="13" fontSize="10.0" removeLineWhenBlank="true">
+				<printWhenExpression><![CDATA[$F{BilirrDirecta} != null]]></printWhenExpression>
+				<expression><![CDATA[$F{BilirrDirecta}]]></expression>
+			</element>
+			<element kind="staticText" uuid="7ae6441c-3a09-4a38-8f93-a26f0cd9f86b" positionType="Float" stretchType="ContainerBottom" x="240" y="234" width="120" height="13" fontSize="10.0" removeLineWhenBlank="true">
+				<printWhenExpression><![CDATA[$F{BilirrDirecta} != null]]></printWhenExpression>
+				<text><![CDATA[Hasta 0,5 mg/dL]]></text>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			</element>
+			<element kind="line" uuid="1e4e15b7-5e33-4d48-8592-8824c48d471f" positionType="Float" stretchType="ContainerBottom" x="0" y="247" width="360" height="1" removeLineWhenBlank="true">
+				<printWhenExpression><![CDATA[$F{BilirrDirecta} != null]]></printWhenExpression>
+				<pen lineWidth="0.5" lineStyle="Dashed"/>
+			</element>
+			<element kind="staticText" uuid="f7df589b-2cc5-4f26-8050-4ff127830a99" positionType="Float" stretchType="ContainerBottom" x="0" y="248" width="120" height="13" fontSize="10.0" removeLineWhenBlank="true" bold="true">
+				<printWhenExpression><![CDATA[$F{BilirrIndirecta} != null]]></printWhenExpression>
+				<text><![CDATA[Bilirr Indirecta]]></text>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			</element>
+			<element kind="textField" uuid="774a148d-cdba-4548-b4c3-3ed06d1e4dbd" positionType="Float" stretchType="ContainerBottom" x="120" y="248" width="120" height="13" fontSize="10.0" removeLineWhenBlank="true">
+				<printWhenExpression><![CDATA[$F{BilirrIndirecta} != null]]></printWhenExpression>
+				<expression><![CDATA[$F{BilirrIndirecta}]]></expression>
+			</element>
+			<element kind="staticText" uuid="52bd9d6a-269e-4dce-b53c-346106d895a5" positionType="Float" stretchType="ContainerBottom" x="240" y="248" width="120" height="13" fontSize="10.0" removeLineWhenBlank="true">
+				<printWhenExpression><![CDATA[$F{BilirrIndirecta} != null]]></printWhenExpression>
+				<text><![CDATA[]]></text>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			</element>
+			<element kind="line" uuid="a2ff3c41-bc08-455f-8424-ad64ae53463b" positionType="Float" stretchType="ContainerBottom" x="0" y="261" width="360" height="1" removeLineWhenBlank="true">
+				<printWhenExpression><![CDATA[$F{BilirrIndirecta} != null]]></printWhenExpression>
+				<pen lineWidth="0.5" lineStyle="Dashed"/>
+			</element>
+			<element kind="staticText" uuid="296d0142-6100-43cb-875d-7de973959254" positionType="Float" stretchType="ContainerBottom" x="0" y="262" width="120" height="13" fontSize="10.0" removeLineWhenBlank="true" bold="true">
+				<printWhenExpression><![CDATA[$F{FosfAlc} != null]]></printWhenExpression>
+				<text><![CDATA[Fosf Alc]]></text>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			</element>
+			<element kind="textField" uuid="406ae369-5ce8-43ea-bb0a-f678555b280f" positionType="Float" stretchType="ContainerBottom" x="120" y="262" width="120" height="13" fontSize="10.0" removeLineWhenBlank="true">
+				<printWhenExpression><![CDATA[$F{FosfAlc} != null]]></printWhenExpression>
+				<expression><![CDATA[$F{FosfAlc}]]></expression>
+			</element>
+			<element kind="staticText" uuid="692b3567-7e86-48fc-8e01-54098b7dccba" positionType="Float" stretchType="ContainerBottom" x="240" y="262" width="120" height="13" fontSize="10.0" removeLineWhenBlank="true">
+				<printWhenExpression><![CDATA[$F{FosfAlc} != null]]></printWhenExpression>
+				<text><![CDATA[35 - 270 U/L]]></text>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			</element>
+			<element kind="line" uuid="84bde0d9-54c9-4e37-a983-03aa37452c49" positionType="Float" stretchType="ContainerBottom" x="0" y="275" width="360" height="1" removeLineWhenBlank="true">
+				<printWhenExpression><![CDATA[$F{FosfAlc} != null]]></printWhenExpression>
+				<pen lineWidth="0.5" lineStyle="Dashed"/>
+			</element>
+			<element kind="staticText" uuid="b1b1724f-5acb-4954-b12d-6528ac8021cb" positionType="Float" stretchType="ContainerBottom" x="0" y="276" width="120" height="13" fontSize="10.0" removeLineWhenBlank="true" bold="true">
+				<printWhenExpression><![CDATA[$F{LDH} != null]]></printWhenExpression>
+				<text><![CDATA[LDH]]></text>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			</element>
+			<element kind="textField" uuid="05eac15a-5858-4856-bc33-ee9606275f1f" positionType="Float" stretchType="ContainerBottom" x="120" y="276" width="120" height="13" fontSize="10.0" removeLineWhenBlank="true">
+				<printWhenExpression><![CDATA[$F{LDH} != null]]></printWhenExpression>
+				<expression><![CDATA[$F{LDH}]]></expression>
+			</element>
+			<element kind="staticText" uuid="dc0478c2-19cc-4cab-90a8-9e959b14e4d3" positionType="Float" stretchType="ContainerBottom" x="240" y="276" width="120" height="13" fontSize="10.0" removeLineWhenBlank="true">
+				<printWhenExpression><![CDATA[$F{LDH} != null]]></printWhenExpression>
+				<text><![CDATA[200 - 400 U/L]]></text>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			</element>
+			<element kind="line" uuid="a5b0dc80-b792-4f4d-b254-514e6aa723bc" positionType="Float" stretchType="ContainerBottom" x="0" y="289" width="360" height="1" removeLineWhenBlank="true">
+				<printWhenExpression><![CDATA[$F{LDH} != null]]></printWhenExpression>
+				<pen lineWidth="0.5" lineStyle="Dashed"/>
+			</element>
+			<element kind="staticText" uuid="f48d7097-ae4a-4d4f-a644-2822c7c53a3f" positionType="Float" stretchType="ContainerBottom" x="0" y="290" width="120" height="13" fontSize="10.0" removeLineWhenBlank="true" bold="true">
+				<printWhenExpression><![CDATA[$F{Amilasa} != null]]></printWhenExpression>
+				<text><![CDATA[Amilasa]]></text>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			</element>
+			<element kind="textField" uuid="c351c85d-5b45-4776-b47c-f503d7555daa" positionType="Float" stretchType="ContainerBottom" x="120" y="290" width="120" height="13" fontSize="10.0" removeLineWhenBlank="true">
+				<printWhenExpression><![CDATA[$F{Amilasa} != null]]></printWhenExpression>
+				<expression><![CDATA[$F{Amilasa}]]></expression>
+			</element>
+			<element kind="staticText" uuid="35482182-09f6-4af1-8e95-e3622d3baf2e" positionType="Float" stretchType="ContainerBottom" x="240" y="290" width="120" height="13" fontSize="10.0" removeLineWhenBlank="true">
+				<printWhenExpression><![CDATA[$F{Amilasa} != null]]></printWhenExpression>
+				<text><![CDATA[Hasta 90 UA/dL]]></text>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			</element>
+			<element kind="line" uuid="772239c1-f79b-489d-a847-93cf2d004586" positionType="Float" stretchType="ContainerBottom" x="0" y="303" width="360" height="1" removeLineWhenBlank="true">
+				<printWhenExpression><![CDATA[$F{Amilasa} != null]]></printWhenExpression>
+				<pen lineWidth="0.5" lineStyle="Dashed"/>
+			</element>
+			<element kind="staticText" uuid="b93f0d16-db85-418e-a7bb-05ffea8b9f4e" positionType="Float" stretchType="ContainerHeight" x="0" y="304" width="120" height="13" fontSize="10.0" removeLineWhenBlank="true" bold="true">
+				<text><![CDATA[Observación]]></text>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			</element>
+			<element kind="textField" uuid="8f7a9914-52f8-47a1-b0ef-793152358a50" positionType="Float" stretchType="ContainerHeight" x="120" y="304" width="240" height="13" fontSize="10.0" removeLineWhenBlank="true">
+				<expression><![CDATA[$F{Observacion}]]></expression>
+			</element>
+			<element kind="textField" uuid="7e706d3a-fe64-49bd-95f2-0f74795f884e" stretchType="ContainerBottom" x="120" y="122" width="120" height="13" removeLineWhenBlank="true">
+				<printWhenExpression><![CDATA[$F{Fosforo} != null]]></printWhenExpression>
+				<expression><![CDATA[$F{Fosforo}]]></expression>
+			</element>
+		</element>
+	</title>
+	<pageFooter height="54" splitType="Stretch">
+		<element kind="staticText" uuid="b4f9ccae-85e0-4723-b015-2ac1f9178532" x="0" y="-1" width="359" height="54" fontSize="8.0" hTextAlign="Left" vTextAlign="Middle">
+			<text><![CDATA[Dirección: Calle 4 Entre Carrera 5 y 6, Sector Campo Alegre
+San José de Bolívar Táchira Venezuela
+Teléfono: (0424) 7234517
+RIF: J-50413383-3]]></text>
+		</element>
+	</pageFooter>
+</jasperReport>

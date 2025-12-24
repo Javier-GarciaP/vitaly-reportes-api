@@ -1,0 +1,149 @@
+<!-- Created with Jaspersoft Studio version 7.0.3.final using JasperReports Library version 7.0.3-41034ca841d452f3305ba55b9042260aaa1ab5dd  -->
+<jasperReport name="AnalisisHeces" language="java" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="0115adc2-b052-428f-aeee-7f32db7eb4cc">
+	<query language="sql"><![CDATA[]]></query>
+	<field name="nombre" class="java.lang.String"/>
+	<field name="cedula" class="java.lang.String"/>
+	<field name="edad" class="java.lang.String"/>
+	<field name="Aspecto" class="java.lang.String"/>
+	<field name="Consistencia" class="java.lang.String"/>
+	<field name="HB" class="java.lang.String"/>
+	<field name="PH" class="java.lang.String"/>
+	<field name="Color" class="java.lang.String"/>
+	<field name="Moco" class="java.lang.String"/>
+	<field name="Reaccion" class="java.lang.String"/>
+	<field name="AzReductores" class="java.lang.String"/>
+	<field name="Polimofonucleares" class="java.lang.String"/>
+	<field name="SangreOculta" class="java.lang.String"/>
+	<field name="RestosAlim" class="java.lang.String"/>
+	<field name="FloraBacteriana" class="java.lang.String"/>
+	<field name="Parasitos" class="java.lang.String"/>
+	<field name="Observaciones" class="java.lang.String"/>
+	<background splitType="Stretch"/>
+	<title height="501" splitType="Stretch">
+		<element kind="staticText" uuid="1d9137c4-ccd7-4237-bcfa-2e507ad4a06b" x="0" y="120" width="360" height="28" forecolor="#5C1D1F" fontSize="15.0" bold="true" hTextAlign="Center" vTextAlign="Top">
+			<text><![CDATA[Análisis de Heces]]></text>
+		</element>
+		<element kind="line" uuid="3215808d-648f-46b3-ba45-915e4c756485" x="0" y="148" width="360" height="1" forecolor="#4A90E2"/>
+		<element kind="staticText" uuid="539e3354-273a-4324-99b9-3192c2519264" x="0" y="160" width="90" height="20" bold="true" vTextAlign="Middle">
+			<text><![CDATA[Aspecto:]]></text>
+		</element>
+		<element kind="staticText" uuid="62193ea6-cee2-40a9-a331-f00d75d7fd41" x="0" y="180" width="90" height="20" bold="true" vTextAlign="Middle">
+			<text><![CDATA[Consistencia:]]></text>
+		</element>
+		<element kind="staticText" uuid="57f52c95-e286-4d8f-a28b-22beb03333e7" x="0" y="200" width="90" height="20" bold="true" vTextAlign="Middle">
+			<text><![CDATA[HB:]]></text>
+		</element>
+		<element kind="staticText" uuid="14b43324-d258-45c0-8eb6-e142e08b35f0" x="0" y="220" width="90" height="20" bold="true" vTextAlign="Middle">
+			<text><![CDATA[PH:]]></text>
+		</element>
+		<element kind="staticText" uuid="a9ea8ad1-2fdf-448b-b9e2-8af446da536f" x="180" y="160" width="90" height="20" bold="true" vTextAlign="Middle">
+			<text><![CDATA[Color:]]></text>
+		</element>
+		<element kind="staticText" uuid="f833c161-076f-470e-9110-a84791759281" x="180" y="180" width="90" height="20" bold="true" vTextAlign="Middle">
+			<text><![CDATA[Moco:]]></text>
+		</element>
+		<element kind="staticText" uuid="37d01f50-14f6-4a39-bf38-ae83b39a35ca" x="180" y="200" width="90" height="20" bold="true" vTextAlign="Middle">
+			<text><![CDATA[Reacción:]]></text>
+		</element>
+		<element kind="line" uuid="41134061-b0ec-4879-807e-7ba9fca9535e" x="0" y="250" width="360" height="1" forecolor="#4A90E2"/>
+		<element kind="staticText" uuid="822c5949-2aec-4e32-b667-e36cde22236a" x="0" y="260" width="90" height="20" bold="true" vTextAlign="Middle">
+			<text><![CDATA[Az. Reductores:]]></text>
+		</element>
+		<element kind="staticText" uuid="df09b062-53a8-4a19-9b09-0cb163116468" x="0" y="280" width="90" height="20" bold="true" vTextAlign="Middle">
+			<text><![CDATA[Polimorfonucleares:]]></text>
+		</element>
+		<element kind="staticText" uuid="875431d7-35e5-4a68-a2bf-f96da2ffc3fa" x="0" y="300" width="90" height="20" bold="true" vTextAlign="Middle">
+			<text><![CDATA[Sangre Oculta:]]></text>
+		</element>
+		<element kind="staticText" uuid="e6ed5cd1-51f9-4ce8-b670-9765fa43e8b3" x="0" y="320" width="90" height="20" bold="true" vTextAlign="Middle">
+			<text><![CDATA[Restos. Alim:]]></text>
+		</element>
+		<element kind="staticText" uuid="d62f2729-73c2-48c4-9af4-265c97389846" x="0" y="340" width="90" height="20" bold="true" vTextAlign="Middle">
+			<text><![CDATA[Flora Bacteriana:]]></text>
+		</element>
+		<element kind="line" uuid="f8910ed3-165b-4e83-851a-20ea19340c1c" x="0" y="370" width="360" height="1" forecolor="#4A90E2"/>
+		<element kind="staticText" uuid="ec033a42-d799-43d8-ab36-4bfb8334c1e3" x="0" y="380" width="90" height="20" bold="true" vTextAlign="Middle">
+			<text><![CDATA[Parásitos:]]></text>
+		</element>
+		<element kind="staticText" uuid="4f5f283c-3531-4926-9145-786a8a91781e" x="0" y="430" width="90" height="20" bold="true" vTextAlign="Middle">
+			<text><![CDATA[Observaciones:]]></text>
+		</element>
+		<element kind="textField" uuid="962cc03c-f024-4d20-aafd-492365d2445c" x="90" y="160" width="90" height="20" vTextAlign="Middle">
+			<expression><![CDATA[$F{Aspecto}]]></expression>
+		</element>
+		<element kind="textField" uuid="bbb3380b-8f3d-4638-aef4-815f76ee2e9c" x="90" y="180" width="90" height="20" vTextAlign="Middle">
+			<expression><![CDATA[$F{Consistencia}]]></expression>
+		</element>
+		<element kind="textField" uuid="05c7fcdf-18a7-4406-9ab6-570b493c90f8" x="90" y="200" width="90" height="20" vTextAlign="Middle">
+			<expression><![CDATA[$F{HB}]]></expression>
+		</element>
+		<element kind="textField" uuid="c8a21fb4-db35-40ab-9c5a-ee022bdacbdb" x="90" y="220" width="90" height="20" vTextAlign="Middle">
+			<expression><![CDATA[$F{PH}]]></expression>
+		</element>
+		<element kind="textField" uuid="30ee92d8-9acf-4d18-aeb1-dfc1d116a2a9" x="270" y="160" width="90" height="20" vTextAlign="Middle">
+			<expression><![CDATA[$F{Color}]]></expression>
+		</element>
+		<element kind="textField" uuid="1d61862c-474e-4af1-9ba8-bdec6aaa1aa6" x="270" y="180" width="90" height="20" vTextAlign="Middle">
+			<expression><![CDATA[$F{Moco}]]></expression>
+		</element>
+		<element kind="textField" uuid="dbb0f1f8-cf3b-47f4-9519-ca47f732f068" x="270" y="200" width="90" height="20" vTextAlign="Middle">
+			<expression><![CDATA[$F{Reaccion}]]></expression>
+		</element>
+		<element kind="textField" uuid="791ec66f-b555-4d9d-8794-0da8bebf6a0e" x="100" y="260" width="260" height="20" vTextAlign="Middle">
+			<expression><![CDATA[$F{AzReductores}]]></expression>
+		</element>
+		<element kind="textField" uuid="eb6c4b20-7159-4feb-a61b-0b58d6a03ac9" x="100" y="280" width="260" height="20" vTextAlign="Middle">
+			<expression><![CDATA[$F{Polimofonucleares}]]></expression>
+		</element>
+		<element kind="textField" uuid="74816cb8-b513-4417-84c0-dca294e3536a" x="100" y="300" width="260" height="20" vTextAlign="Middle">
+			<expression><![CDATA[$F{SangreOculta}]]></expression>
+		</element>
+		<element kind="textField" uuid="91660bf7-3278-4669-b593-20bf326b9eba" x="100" y="320" width="260" height="20" vTextAlign="Middle">
+			<expression><![CDATA[$F{RestosAlim}]]></expression>
+		</element>
+		<element kind="textField" uuid="f961e8f3-15ee-49cf-bf69-a7a2611c255c" x="100" y="340" width="260" height="20" vTextAlign="Middle">
+			<expression><![CDATA[$F{FloraBacteriana}]]></expression>
+		</element>
+		<element kind="textField" uuid="49f92b76-a22a-4273-b5e6-2124d184584f" x="0" y="400" width="360" height="20">
+			<expression><![CDATA[$F{Parasitos}]]></expression>
+		</element>
+		<element kind="textField" uuid="0cf6e276-8585-46d6-81a4-b2e29f2dc50b" x="0" y="450" width="360" height="20">
+			<expression><![CDATA[$F{Observaciones}]]></expression>
+		</element>
+		<element kind="staticText" uuid="375242a6-8c6e-49a7-9f58-5e395a87df5c" x="0" y="0" width="360" height="20" forecolor="#5C1D1F" fontSize="15.0" bold="true" hTextAlign="Center" vTextAlign="Top">
+			<text><![CDATA[Datos del Paciente]]></text>
+		</element>
+		<element kind="textField" uuid="34c1ddf4-3958-421f-bc03-faf33ab8dd6f" x="50" y="50" width="310" height="20" vTextAlign="Middle">
+			<expression><![CDATA[$F{nombre}]]></expression>
+		</element>
+		<element kind="textField" uuid="040af2d8-4ad0-4ce5-abf6-5edc02781309" x="50" y="70" width="310" height="20" vTextAlign="Middle">
+			<expression><![CDATA[$F{cedula}]]></expression>
+		</element>
+		<element kind="textField" uuid="dcdd6f95-2afb-49e6-ae38-a9a33e516457" x="50" y="90" width="310" height="20" vTextAlign="Middle">
+			<expression><![CDATA[$F{edad}]]></expression>
+		</element>
+		<element kind="textField" uuid="d51aeb3a-de10-412c-b37e-0393a7463017" x="50" y="30" width="310" height="20" pattern="MMMMM dd, yyyy" vTextAlign="Middle">
+			<expression><![CDATA[new java.util.Date()]]></expression>
+		</element>
+		<element kind="staticText" uuid="164623ab-b8d5-4b55-9caf-c99d63509bea" x="0" y="50" width="50" height="20" fontSize="10.0" bold="true" hTextAlign="Left" vTextAlign="Middle">
+			<text><![CDATA[Nombre:]]></text>
+		</element>
+		<element kind="staticText" uuid="44be932f-8517-4761-a75a-af61b1131516" x="0" y="30" width="50" height="20" fontSize="10.0" bold="true" hTextAlign="Left" vTextAlign="Middle">
+			<text><![CDATA[Fecha:]]></text>
+		</element>
+		<element kind="staticText" uuid="92c2bad4-ee22-4a5f-a0ce-c8259c75cdea" x="0" y="70" width="50" height="20" fontSize="10.0" bold="true" vTextAlign="Middle">
+			<text><![CDATA[Cédula:]]></text>
+		</element>
+		<element kind="staticText" uuid="32833642-286a-4e7f-8799-56983d701dbd" x="0" y="90" width="50" height="20" fontSize="10.0" bold="true" vTextAlign="Middle">
+			<text><![CDATA[Edad:]]></text>
+		</element>
+	</title>
+	<pageFooter height="54" splitType="Stretch">
+		<element kind="staticText" uuid="830dd8ed-a2df-407f-b38c-4832dc49a470" x="0" y="-1" width="359" height="54" fontSize="8.0" hTextAlign="Left" vTextAlign="Middle">
+			<text><![CDATA[Dirección: Calle 4 Entre Carrera 5 y 6, Sector Campo Alegre
+San José de Bolívar Táchira Venezuela
+Teléfono: (0424) 7234517
+RIF: J-50413383-3]]></text>
+		</element>
+	</pageFooter>
+</jasperReport>

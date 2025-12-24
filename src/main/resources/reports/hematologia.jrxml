@@ -1,0 +1,415 @@
+<!-- Created with Jaspersoft Studio version 7.0.3.final using JasperReports Library version 7.0.3-41034ca841d452f3305ba55b9042260aaa1ab5dd  -->
+<jasperReport name="Hematologia" language="java" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="e2c1ab3c-b134-4716-89a8-2e6940e5c0b6">
+	<dataset name="Empty Dataset1" uuid="81589ba4-6956-4fe6-9721-4123b8b1f6d5"/>
+	<query language="sql"><![CDATA[]]></query>
+	<field name="nombre" class="java.lang.String"/>
+	<field name="cedula" class="java.lang.String"/>
+	<field name="edad" class="java.lang.String"/>
+	<field name="Hematies" class="java.lang.String"/>
+	<field name="Hemoglobina" class="java.lang.String"/>
+	<field name="Hematocrito" class="java.lang.String"/>
+	<field name="VCM" class="java.lang.String"/>
+	<field name="HCM" class="java.lang.String"/>
+	<field name="CHCM" class="java.lang.String"/>
+	<field name="RecuentoLeucocitos" class="java.lang.String"/>
+	<field name="Neutrofilos" class="java.lang.String"/>
+	<field name="Linfocitos" class="java.lang.String"/>
+	<field name="Monocitos" class="java.lang.String"/>
+	<field name="Eosinofilos" class="java.lang.String"/>
+	<field name="Basofilos" class="java.lang.String"/>
+	<field name="RecuentoPlaquetas" class="java.lang.String"/>
+	<field name="1Hora" class="java.lang.String"/>
+	<field name="2Hora" class="java.lang.String"/>
+	<field name="Indice" class="java.lang.String"/>
+	<field name="Observaciones" class="java.lang.String"/>
+	<background splitType="Stretch"/>
+	<title height="501" splitType="Stretch">
+		<element kind="staticText" uuid="bef06d2e-1ed0-43d4-9232-d07955e335eb" x="0" y="120" width="360" height="28" forecolor="#5C1D1F" fontSize="15.0" bold="true" hTextAlign="Center" vTextAlign="Top">
+			<text><![CDATA[Análisis Hematológico]]></text>
+		</element>
+		<element kind="line" uuid="a42592d5-2b33-45c7-a6d8-2100499d5294" x="0" y="148" width="360" height="1" forecolor="#4A90E2"/>
+		<element kind="staticText" uuid="028fc035-693f-4630-9a03-f7e5ead88297" x="0" y="160" width="120" height="20" forecolor="#5C1D1F" fontSize="10.0" bold="true" hTextAlign="Left" vTextAlign="Top">
+			<text><![CDATA[Examen]]></text>
+		</element>
+		<element kind="staticText" uuid="b68e53d9-9990-4162-b5f4-f982313cc720" x="120" y="160" width="120" height="20" forecolor="#5C1D1F" fontSize="10.0" bold="true" hTextAlign="Left" vTextAlign="Top">
+			<text><![CDATA[Resultado]]></text>
+		</element>
+		<element kind="staticText" uuid="1b9b85ce-1535-4f7f-8ad0-429ea2f6a68a" x="240" y="160" width="120" height="20" forecolor="#5C1D1F" fontSize="10.0" bold="true" hTextAlign="Left" vTextAlign="Top">
+			<text><![CDATA[Valor de Referencia]]></text>
+		</element>
+		<element kind="line" uuid="adf52e36-cdfd-4630-9369-2549f17fdfb5" x="0" y="180" width="360" height="1" forecolor="#4A90E2"/>
+		<element kind="frame" uuid="3d879d2c-04e2-423f-bda7-89a806a9e1ce" positionType="Float" stretchType="NoStretch" x="0" y="180" width="360" height="320" removeLineWhenBlank="true">
+			<element kind="staticText" uuid="a90309f6-39bb-410c-b3aa-fda5cb48d375" positionType="Float" stretchType="ContainerBottom" x="0" y="10" width="120" height="11" fontSize="8.0" removeLineWhenBlank="true" bold="true" vTextAlign="Top">
+				<printWhenExpression><![CDATA[$F{Hematies} != null]]></printWhenExpression>
+				<text><![CDATA[Hematies]]></text>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			</element>
+			<element kind="staticText" uuid="b1d88985-e8bc-4919-b484-cfe0902376ad" positionType="Float" stretchType="ContainerBottom" x="240" y="20" width="120" height="71" fontSize="8.0" removeLineWhenBlank="true" vTextAlign="Top">
+				<printWhenExpression><![CDATA[$F{Hemoglobina} != null]]></printWhenExpression>
+				<text><![CDATA[Mujer: 12 - 14 g/dL
+Hombre: 14 - 16 g/dL
+Niños:
+0 a 2 Semanas: 13,5 - 18,5 g/dL
+2 a 6 Meses: 9,5 - 13,5 g/dL
+6 Meses a 6 años: 11 - 14 g/dL
+6 a 12 años: 12 - 15.5 g/dL]]></text>
+			</element>
+			<element kind="line" uuid="ec059fe8-41c7-4b49-aa11-538c52ae5726" positionType="Float" stretchType="ContainerBottom" x="0" y="20" width="360" height="1" forecolor="#000000" removeLineWhenBlank="true">
+				<printWhenExpression><![CDATA[$F{Hematies} != null]]></printWhenExpression>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				<pen lineWidth="0.5" lineStyle="Dashed"/>
+			</element>
+			<element kind="line" uuid="7857c514-bbcc-4850-8a15-0b5e52db2bd4" positionType="Float" stretchType="ContainerBottom" x="0" y="91" width="360" height="1" forecolor="#000000" removeLineWhenBlank="true">
+				<printWhenExpression><![CDATA[$F{Hemoglobina} != null]]></printWhenExpression>
+				<pen lineWidth="0.5" lineStyle="Dashed"/>
+			</element>
+			<element kind="staticText" uuid="cf4eae52-075e-413e-86a1-112b8feadd2d" positionType="Float" stretchType="ContainerBottom" x="240" y="10" width="120" height="11" fontSize="8.0" removeLineWhenBlank="true" vTextAlign="Top">
+				<printWhenExpression><![CDATA[$F{Hematies} != null]]></printWhenExpression>
+				<text><![CDATA[4,20 - 6,30 Mul]]></text>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			</element>
+			<element kind="line" uuid="07d00b38-bf6f-4cae-b0f7-608df6aedd73" positionType="Float" stretchType="ContainerBottom" x="0" y="102" width="360" height="1" forecolor="#000000" removeLineWhenBlank="true">
+				<printWhenExpression><![CDATA[$F{Hematocrito} != null]]></printWhenExpression>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				<pen lineWidth="0.5" lineStyle="Dashed"/>
+			</element>
+			<element kind="staticText" uuid="00bbe3da-cd7e-469a-9ede-0a5c1dc2f699" positionType="Float" stretchType="ContainerBottom" x="0" y="92" width="120" height="11" fontSize="8.0" removeLineWhenBlank="true" bold="true" vTextAlign="Top">
+				<printWhenExpression><![CDATA[$F{Hematocrito} != null]]></printWhenExpression>
+				<text><![CDATA[Hematocrito]]></text>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			</element>
+			<element kind="staticText" uuid="449952c2-8c5f-450c-b930-4b55be7ecc1b" positionType="Float" stretchType="ContainerBottom" x="240" y="92" width="120" height="11" fontSize="8.0" removeLineWhenBlank="true" vTextAlign="Top">
+				<printWhenExpression><![CDATA[$F{Hematocrito} != null]]></printWhenExpression>
+				<text><![CDATA[36,0 - 48,0 %]]></text>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			</element>
+			<element kind="line" uuid="6172c53a-f61b-4e94-935e-fd0119d3c203" positionType="Float" stretchType="ContainerBottom" x="0" y="113" width="360" height="1" forecolor="#000000" removeLineWhenBlank="true">
+				<printWhenExpression><![CDATA[$F{VCM} != null]]></printWhenExpression>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				<pen lineWidth="0.5" lineStyle="Dashed"/>
+			</element>
+			<element kind="staticText" uuid="04541b78-e2df-42f5-9f86-33d7e4e29207" positionType="Float" stretchType="ContainerBottom" x="0" y="103" width="120" height="11" fontSize="8.0" removeLineWhenBlank="true" bold="true" vTextAlign="Top">
+				<printWhenExpression><![CDATA[$F{VCM} != null]]></printWhenExpression>
+				<text><![CDATA[V.C.M]]></text>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			</element>
+			<element kind="staticText" uuid="f51b50d3-3e6c-4fdc-b091-a262a3c9823f" positionType="Float" stretchType="ContainerBottom" x="240" y="103" width="120" height="11" fontSize="8.0" removeLineWhenBlank="true" vTextAlign="Top">
+				<printWhenExpression><![CDATA[$F{VCM} != null]]></printWhenExpression>
+				<text><![CDATA[80 - 100 fl]]></text>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			</element>
+			<element kind="line" uuid="e7d21277-909c-4d8c-b009-13f683f07c6d" positionType="Float" stretchType="ContainerBottom" x="0" y="124" width="360" height="1" forecolor="#000000" removeLineWhenBlank="true">
+				<printWhenExpression><![CDATA[$F{HCM} != null]]></printWhenExpression>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				<pen lineWidth="0.5" lineStyle="Dashed"/>
+			</element>
+			<element kind="staticText" uuid="ed008f87-a561-4429-a73b-20309e3bad3f" positionType="Float" stretchType="ContainerBottom" x="0" y="114" width="120" height="11" fontSize="8.0" removeLineWhenBlank="true" bold="true" vTextAlign="Top">
+				<printWhenExpression><![CDATA[$F{HCM} != null]]></printWhenExpression>
+				<text><![CDATA[H.C.M]]></text>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			</element>
+			<element kind="staticText" uuid="a9cbd521-56c7-442a-9d98-a3ed10448d1f" positionType="Float" stretchType="ContainerBottom" x="240" y="114" width="120" height="11" fontSize="8.0" removeLineWhenBlank="true" vTextAlign="Top">
+				<printWhenExpression><![CDATA[$F{HCM} != null]]></printWhenExpression>
+				<text><![CDATA[26 - 33 pg]]></text>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			</element>
+			<element kind="line" uuid="64027fa7-8461-4b0e-8f25-025f57cbd673" positionType="Float" stretchType="ContainerBottom" x="0" y="135" width="360" height="1" forecolor="#000000" removeLineWhenBlank="true">
+				<printWhenExpression><![CDATA[$F{CHCM} != null]]></printWhenExpression>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				<pen lineWidth="0.5" lineStyle="Dashed"/>
+			</element>
+			<element kind="staticText" uuid="99d7d0a1-5029-475b-b1f1-8e20bee36c8c" positionType="Float" stretchType="ContainerBottom" x="0" y="125" width="120" height="11" fontSize="8.0" removeLineWhenBlank="true" bold="true" vTextAlign="Top">
+				<printWhenExpression><![CDATA[$F{CHCM} != null]]></printWhenExpression>
+				<text><![CDATA[C.H.C.M]]></text>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				<box topPadding="0" leftPadding="0" bottomPadding="0" rightPadding="0"/>
+			</element>
+			<element kind="staticText" uuid="9d2d58c3-7387-4023-92cc-5e1a0b63bd44" positionType="Float" stretchType="ContainerBottom" x="240" y="125" width="120" height="11" fontSize="8.0" removeLineWhenBlank="true" vTextAlign="Top">
+				<printWhenExpression><![CDATA[$F{CHCM} != null]]></printWhenExpression>
+				<text><![CDATA[31 - 36 g/l]]></text>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			</element>
+			<element kind="line" uuid="4a761a33-8fdd-443e-a89b-76948d9d4ebb" positionType="Float" stretchType="ContainerBottom" x="0" y="157" width="360" height="1" forecolor="#000000" removeLineWhenBlank="true">
+				<printWhenExpression><![CDATA[$F{RecuentoLeucocitos} != null]]></printWhenExpression>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				<pen lineWidth="0.5" lineStyle="Dashed"/>
+			</element>
+			<element kind="staticText" uuid="9d623054-06d9-4264-8a22-d2c00bfff7af" positionType="Float" stretchType="ContainerBottom" x="0" y="147" width="120" height="11" fontSize="8.0" removeLineWhenBlank="true" bold="true" vTextAlign="Middle">
+				<printWhenExpression><![CDATA[$F{RecuentoLeucocitos} != null]]></printWhenExpression>
+				<text><![CDATA[Recuento de Leucocitos]]></text>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			</element>
+			<element kind="staticText" uuid="c599e5b4-3ebc-40d2-a5d0-4dbc4233ac27" positionType="Float" stretchType="ContainerBottom" x="240" y="147" width="120" height="11" fontSize="8.0" removeLineWhenBlank="true" vTextAlign="Middle">
+				<printWhenExpression><![CDATA[$F{RecuentoLeucocitos} != null]]></printWhenExpression>
+				<text><![CDATA[5.000 - 10.000 mm3]]></text>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			</element>
+			<element kind="line" uuid="88fb9c07-8426-40fd-b736-84cdd7ccb4ae" positionType="Float" stretchType="ContainerBottom" x="0" y="168" width="360" height="1" forecolor="#000000" removeLineWhenBlank="true">
+				<printWhenExpression><![CDATA[$F{Neutrofilos} != null]]></printWhenExpression>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				<pen lineWidth="0.5" lineStyle="Dashed"/>
+			</element>
+			<element kind="staticText" uuid="aa4e37d3-2c77-4571-a889-1b9c0498c17a" positionType="Float" stretchType="ContainerBottom" x="0" y="158" width="120" height="11" fontSize="8.0" removeLineWhenBlank="true" bold="true" vTextAlign="Middle">
+				<printWhenExpression><![CDATA[$F{Neutrofilos} != null]]></printWhenExpression>
+				<text><![CDATA[Neutrófilos]]></text>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			</element>
+			<element kind="staticText" uuid="e1ce199c-f194-4e83-addf-0ddbe29a4dd4" positionType="Float" stretchType="ContainerBottom" x="240" y="158" width="120" height="11" fontSize="8.0" removeLineWhenBlank="true" vTextAlign="Middle">
+				<printWhenExpression><![CDATA[$F{Neutrofilos} != null]]></printWhenExpression>
+				<text><![CDATA[37 - 63 %]]></text>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			</element>
+			<element kind="line" uuid="430fe363-7b81-436a-9314-ad3186a039fe" positionType="Float" stretchType="ContainerBottom" x="0" y="179" width="360" height="1" forecolor="#000000" removeLineWhenBlank="true">
+				<printWhenExpression><![CDATA[$F{Linfocitos} != null]]></printWhenExpression>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				<pen lineWidth="0.5" lineStyle="Dashed"/>
+			</element>
+			<element kind="staticText" uuid="de218e8a-2823-4ec3-b6f2-3377dbd8eb11" positionType="Float" stretchType="ContainerBottom" x="0" y="169" width="120" height="11" fontSize="8.0" removeLineWhenBlank="true" bold="true" vTextAlign="Middle">
+				<printWhenExpression><![CDATA[$F{Linfocitos} != null]]></printWhenExpression>
+				<text><![CDATA[Linfocitos]]></text>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			</element>
+			<element kind="staticText" uuid="39aee9e7-aa6c-4c27-ab2d-bd31b196fa17" positionType="Float" stretchType="ContainerBottom" x="240" y="169" width="120" height="11" fontSize="8.0" removeLineWhenBlank="true" vTextAlign="Middle">
+				<printWhenExpression><![CDATA[$F{Linfocitos} != null]]></printWhenExpression>
+				<text><![CDATA[17 - 33 %]]></text>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			</element>
+			<element kind="line" uuid="0d95e77e-ecba-41c3-837d-85f8e5c428a0" positionType="Float" stretchType="ContainerBottom" x="0" y="190" width="360" height="1" forecolor="#000000" removeLineWhenBlank="true">
+				<printWhenExpression><![CDATA[$F{Monocitos} != null]]></printWhenExpression>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				<pen lineWidth="0.5" lineStyle="Dashed"/>
+			</element>
+			<element kind="staticText" uuid="3c9378f6-3cb3-4775-bff8-06e3d5928e3a" positionType="Float" stretchType="ContainerBottom" x="0" y="180" width="120" height="11" fontSize="8.0" removeLineWhenBlank="true" bold="true" vTextAlign="Middle">
+				<printWhenExpression><![CDATA[$F{Monocitos} != null]]></printWhenExpression>
+				<text><![CDATA[Monocitos]]></text>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			</element>
+			<element kind="staticText" uuid="5c26a12e-21c1-44c9-9414-1fb38fe09716" positionType="Float" stretchType="ContainerBottom" x="240" y="180" width="120" height="11" fontSize="8.0" removeLineWhenBlank="true" vTextAlign="Middle">
+				<printWhenExpression><![CDATA[$F{Monocitos} != null]]></printWhenExpression>
+				<text><![CDATA[0 - 2 %]]></text>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			</element>
+			<element kind="line" uuid="0334426e-079c-4c9a-8fde-11d1655a6a65" positionType="Float" stretchType="ContainerBottom" x="0" y="201" width="360" height="1" forecolor="#000000" removeLineWhenBlank="true">
+				<printWhenExpression><![CDATA[$F{Eosinofilos} != null]]></printWhenExpression>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				<pen lineWidth="0.5" lineStyle="Dashed"/>
+			</element>
+			<element kind="staticText" uuid="e4bc2807-92a1-4862-93a9-5d4fc4371fab" positionType="Float" stretchType="ContainerBottom" x="0" y="191" width="120" height="11" fontSize="8.0" removeLineWhenBlank="true" bold="true" vTextAlign="Middle">
+				<printWhenExpression><![CDATA[$F{Eosinofilos} != null]]></printWhenExpression>
+				<text><![CDATA[Eosinófilos]]></text>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			</element>
+			<element kind="staticText" uuid="1f8eb468-396d-43c6-81c7-9c9345a58b3f" positionType="Float" stretchType="ContainerBottom" x="240" y="191" width="120" height="11" fontSize="8.0" removeLineWhenBlank="true" vTextAlign="Middle">
+				<printWhenExpression><![CDATA[$F{Eosinofilos} != null]]></printWhenExpression>
+				<text><![CDATA[0 - 3 %]]></text>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			</element>
+			<element kind="line" uuid="6103cb70-0087-47a9-b7d5-a981351b02e3" positionType="Float" stretchType="ContainerBottom" x="0" y="212" width="360" height="1" forecolor="#000000" removeLineWhenBlank="true">
+				<printWhenExpression><![CDATA[$F{Basofilos} != null]]></printWhenExpression>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				<pen lineWidth="0.5" lineStyle="Dashed"/>
+			</element>
+			<element kind="staticText" uuid="97571e5d-c32f-4550-90b1-e0f54580378f" positionType="Float" stretchType="ContainerBottom" x="0" y="202" width="120" height="11" fontSize="8.0" removeLineWhenBlank="true" bold="true" vTextAlign="Middle">
+				<printWhenExpression><![CDATA[$F{Basofilos} != null]]></printWhenExpression>
+				<text><![CDATA[Basófilos]]></text>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			</element>
+			<element kind="staticText" uuid="55bc5b43-dee7-4963-a5e6-d8669739fa13" positionType="Float" stretchType="ContainerBottom" x="240" y="202" width="120" height="11" fontSize="8.0" removeLineWhenBlank="true" vTextAlign="Middle">
+				<printWhenExpression><![CDATA[$F{Basofilos} != null]]></printWhenExpression>
+				<text><![CDATA[0 - 1 %]]></text>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			</element>
+			<element kind="line" uuid="2d5adbe4-d6c8-4c22-a8e6-b42917f219e8" positionType="Float" stretchType="ContainerBottom" x="0" y="234" width="360" height="1" forecolor="#000000" removeLineWhenBlank="true">
+				<printWhenExpression><![CDATA[$F{RecuentoPlaquetas} != null]]></printWhenExpression>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				<pen lineWidth="0.5" lineStyle="Dashed"/>
+			</element>
+			<element kind="staticText" uuid="1c39adc5-7133-4c38-99ea-219cdc674d56" positionType="Float" stretchType="ContainerBottom" x="0" y="224" width="120" height="11" fontSize="8.0" removeLineWhenBlank="true" bold="true" vTextAlign="Middle">
+				<printWhenExpression><![CDATA[$F{RecuentoPlaquetas} != null]]></printWhenExpression>
+				<text><![CDATA[Recuento de Plaquetas]]></text>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			</element>
+			<element kind="staticText" uuid="b22b1b2a-bbc4-448f-8236-cf2060f7a717" positionType="Float" stretchType="ContainerBottom" x="240" y="224" width="120" height="11" fontSize="8.0" removeLineWhenBlank="true" vTextAlign="Middle">
+				<printWhenExpression><![CDATA[$F{RecuentoPlaquetas} != null]]></printWhenExpression>
+				<text><![CDATA[140.000 - 440.000 mm3]]></text>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			</element>
+			<element kind="staticText" uuid="8e3699f1-4209-408a-8ed0-973537d60614" positionType="Float" stretchType="ContainerBottom" x="0" y="21" width="120" height="11" fontSize="8.0" removeLineWhenBlank="true" bold="true" vTextAlign="Top">
+				<printWhenExpression><![CDATA[$F{Hemoglobina} != null]]></printWhenExpression>
+				<text><![CDATA[Hemoglobina]]></text>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			</element>
+			<element kind="staticText" uuid="79146bc5-2d67-41fe-9b8e-9b7bb7be6b9c" positionType="Float" stretchType="ContainerBottom" x="0" y="-1" width="120" height="11" forecolor="#5C1D1F" fontSize="8.0" removeLineWhenBlank="true" bold="true" hTextAlign="Left" vTextAlign="Top">
+				<printWhenExpression><![CDATA[$F{Hematies} != null]]></printWhenExpression>
+				<text><![CDATA[Serie Roja]]></text>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			</element>
+			<element kind="staticText" uuid="bdf09b18-bdc9-498d-8f1a-473d405a781a" positionType="Float" stretchType="ContainerBottom" x="0" y="136" width="120" height="11" forecolor="#5C1D1F" fontSize="8.0" removeLineWhenBlank="true" bold="true" hTextAlign="Left" vTextAlign="Top">
+				<printWhenExpression><![CDATA[$F{RecuentoLeucocitos} != null]]></printWhenExpression>
+				<text><![CDATA[Serie Blanca]]></text>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			</element>
+			<element kind="staticText" uuid="a437488e-8c36-4f48-b369-e6ebf5184c45" positionType="Float" stretchType="ContainerBottom" x="0" y="213" width="120" height="11" forecolor="#5C1D1F" fontSize="8.0" removeLineWhenBlank="true" bold="true" hTextAlign="Left" vTextAlign="Top">
+				<printWhenExpression><![CDATA[$F{RecuentoPlaquetas} != null]]></printWhenExpression>
+				<text><![CDATA[Serie Plaquetaria]]></text>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			</element>
+			<element kind="textField" uuid="1f9f745c-7c87-4175-9a67-df4552990f0d" positionType="Float" stretchType="ContainerBottom" x="120" y="10" width="120" height="11" fontSize="8.0" removeLineWhenBlank="true" vTextAlign="Top">
+				<printWhenExpression><![CDATA[$F{Hematies} != null]]></printWhenExpression>
+				<expression><![CDATA[$F{Hematies}]]></expression>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			</element>
+			<element kind="textField" uuid="6dbec8d4-2560-4ce1-8040-e1c578a39467" positionType="Float" stretchType="ContainerBottom" x="120" y="21" width="120" height="11" fontSize="8.0" removeLineWhenBlank="true" vTextAlign="Top">
+				<printWhenExpression><![CDATA[$F{Hemoglobina} != null]]></printWhenExpression>
+				<expression><![CDATA[$F{Hemoglobina}]]></expression>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			</element>
+			<element kind="textField" uuid="742314e7-cdca-44c7-ad8a-c11a8247ac61" positionType="Float" stretchType="ContainerBottom" x="120" y="92" width="120" height="11" markup="none" fontSize="8.0" removeLineWhenBlank="true" vTextAlign="Top">
+				<printWhenExpression><![CDATA[$F{Hematocrito} != null]]></printWhenExpression>
+				<expression><![CDATA[$F{Hematocrito}]]></expression>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			</element>
+			<element kind="textField" uuid="7df57a87-2256-4f0b-a6d1-a56023868ff9" positionType="Float" stretchType="ContainerBottom" x="120" y="103" width="120" height="11" fontSize="8.0" removeLineWhenBlank="true" vTextAlign="Top">
+				<printWhenExpression><![CDATA[$F{VCM} != null]]></printWhenExpression>
+				<expression><![CDATA[$F{VCM}]]></expression>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			</element>
+			<element kind="textField" uuid="b48d56a7-9848-48d4-8f45-c6764cb1220f" positionType="Float" stretchType="ContainerBottom" x="120" y="114" width="120" height="11" fontSize="8.0" removeLineWhenBlank="true" vTextAlign="Top">
+				<printWhenExpression><![CDATA[$F{HCM} != null]]></printWhenExpression>
+				<expression><![CDATA[$F{HCM}]]></expression>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			</element>
+			<element kind="textField" uuid="508fb1bd-a0bf-443b-b479-1570d7d394be" positionType="Float" stretchType="ContainerBottom" x="120" y="125" width="120" height="11" fontSize="8.0" removeLineWhenBlank="true" vTextAlign="Top">
+				<printWhenExpression><![CDATA[$F{CHCM} != null]]></printWhenExpression>
+				<expression><![CDATA[$F{CHCM}]]></expression>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			</element>
+			<element kind="textField" uuid="48f0f050-8143-40ad-8c97-746e2c221d66" positionType="Float" stretchType="ContainerBottom" x="120" y="158" width="120" height="11" fontSize="8.0" removeLineWhenBlank="true" vTextAlign="Top">
+				<printWhenExpression><![CDATA[$F{Neutrofilos} != null]]></printWhenExpression>
+				<expression><![CDATA[$F{Neutrofilos}]]></expression>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			</element>
+			<element kind="textField" uuid="645abdd4-54c9-488d-8de2-5b1166d31a3b" positionType="Float" stretchType="ContainerBottom" x="120" y="169" width="120" height="11" fontSize="8.0" removeLineWhenBlank="true" vTextAlign="Top">
+				<printWhenExpression><![CDATA[$F{Linfocitos} != null]]></printWhenExpression>
+				<expression><![CDATA[$F{Linfocitos}]]></expression>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			</element>
+			<element kind="textField" uuid="528dc74f-99bd-49a4-ac73-9a862827005d" positionType="Float" stretchType="ContainerBottom" x="120" y="180" width="120" height="11" fontSize="8.0" removeLineWhenBlank="true" vTextAlign="Top">
+				<printWhenExpression><![CDATA[$F{Monocitos} != null]]></printWhenExpression>
+				<expression><![CDATA[$F{Monocitos}]]></expression>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			</element>
+			<element kind="textField" uuid="79f6180e-d550-41ea-a471-da162a8d2ed9" positionType="Float" stretchType="ContainerBottom" x="120" y="191" width="120" height="11" fontSize="8.0" removeLineWhenBlank="true" vTextAlign="Top">
+				<printWhenExpression><![CDATA[$F{Eosinofilos} != null]]></printWhenExpression>
+				<expression><![CDATA[$F{Eosinofilos}]]></expression>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			</element>
+			<element kind="textField" uuid="445cc728-a952-4203-8e43-d307536b32d1" positionType="Float" stretchType="ContainerBottom" x="120" y="202" width="120" height="11" fontSize="8.0" removeLineWhenBlank="true" vTextAlign="Top">
+				<printWhenExpression><![CDATA[$F{Basofilos} != null]]></printWhenExpression>
+				<expression><![CDATA[$F{Basofilos}]]></expression>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			</element>
+			<element kind="textField" uuid="13755a68-f58d-4f0a-b210-c48695d37ef7" positionType="Float" stretchType="ContainerBottom" x="120" y="224" width="120" height="11" fontSize="8.0" removeLineWhenBlank="true" vTextAlign="Top">
+				<printWhenExpression><![CDATA[$F{RecuentoPlaquetas} != null]]></printWhenExpression>
+				<expression><![CDATA[$F{RecuentoPlaquetas}]]></expression>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			</element>
+			<element kind="rectangle" uuid="cddeaa1e-e2cd-465f-8729-02116fb9acf6" positionType="Float" stretchType="ContainerBottom" x="0" y="248" width="360" height="58" removeLineWhenBlank="true">
+				<printWhenExpression><![CDATA[$F{1Hora} != null]]></printWhenExpression>
+				<pen lineWidth="0.5" lineStyle="Dashed"/>
+			</element>
+			<element kind="staticText" uuid="40724c27-4917-4f7a-9207-0f20107ecae7" positionType="Float" stretchType="ContainerBottom" x="10" y="248" width="120" height="11" forecolor="#5C1D1F" fontSize="8.0" removeLineWhenBlank="true" bold="true" hTextAlign="Left" vTextAlign="Top">
+				<printWhenExpression><![CDATA[$F{1Hora} != null]]></printWhenExpression>
+				<text><![CDATA[V.S.G]]></text>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			</element>
+			<element kind="staticText" uuid="3aa05d43-be8c-4dcd-ad1f-81164665c3ce" positionType="Float" stretchType="ContainerBottom" x="10" y="266" width="30" height="11" fontSize="8.0" removeLineWhenBlank="true" bold="true" vTextAlign="Middle">
+				<printWhenExpression><![CDATA[$F{1Hora} != null]]></printWhenExpression>
+				<text><![CDATA[1 Hora:]]></text>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			</element>
+			<element kind="textField" uuid="e757e411-82cb-46d2-9f28-eca04acec392" positionType="Float" stretchType="ContainerBottom" x="40" y="266" width="40" height="11" fontSize="8.0" removeLineWhenBlank="true" vTextAlign="Top">
+				<printWhenExpression><![CDATA[$F{1Hora} != null]]></printWhenExpression>
+				<expression><![CDATA[$F{1Hora}]]></expression>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			</element>
+			<element kind="textField" uuid="ae63ebdc-4e8c-4226-b71a-4b2e64cfa104" positionType="Float" stretchType="ContainerBottom" x="120" y="266" width="40" height="11" fontSize="8.0" removeLineWhenBlank="true" vTextAlign="Top">
+				<printWhenExpression><![CDATA[$F{1Hora} != null]]></printWhenExpression>
+				<expression><![CDATA[$F{2Hora}]]></expression>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			</element>
+			<element kind="staticText" uuid="cbc7585b-45d4-4748-a3c2-950a07489bf1" positionType="Float" stretchType="ContainerBottom" x="90" y="266" width="30" height="11" fontSize="8.0" removeLineWhenBlank="true" bold="true" vTextAlign="Middle">
+				<printWhenExpression><![CDATA[$F{1Hora} != null]]></printWhenExpression>
+				<text><![CDATA[2 Hora:]]></text>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			</element>
+			<element kind="textField" uuid="dc03b27c-1b5d-4be5-8b97-8f0a42e769fc" positionType="Float" stretchType="ContainerBottom" x="200" y="266" width="40" height="11" fontSize="8.0" removeLineWhenBlank="true" vTextAlign="Top">
+				<printWhenExpression><![CDATA[$F{1Hora} != null]]></printWhenExpression>
+				<expression><![CDATA[$F{Indice}]]></expression>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			</element>
+			<element kind="staticText" uuid="09c2a4cd-c395-4efb-a85e-07e8ed7a89e9" positionType="Float" stretchType="ContainerBottom" x="170" y="266" width="30" height="11" fontSize="8.0" removeLineWhenBlank="true" bold="true" vTextAlign="Middle">
+				<printWhenExpression><![CDATA[$F{1Hora} != null]]></printWhenExpression>
+				<text><![CDATA[Indice:]]></text>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			</element>
+			<element kind="textField" uuid="4b1bc4fa-6a05-4df7-9f34-0649623da46e" positionType="Float" stretchType="ContainerBottom" x="120" y="147" width="120" height="11" fontSize="8.0" removeLineWhenBlank="true" vTextAlign="Top">
+				<printWhenExpression><![CDATA[$F{RecuentoLeucocitos} != null]]></printWhenExpression>
+				<expression><![CDATA[$F{RecuentoLeucocitos}]]></expression>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			</element>
+			<element kind="staticText" uuid="e22adb15-2b3c-4c34-b029-eb0fe66e7213" positionType="Float" x="0" y="305" width="90" height="15" fontSize="8.0" removeLineWhenBlank="true" bold="true" vTextAlign="Middle">
+				<text><![CDATA[Observaciones:]]></text>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			</element>
+			<element kind="textField" uuid="8ad111c5-5d2c-4b9f-9e3c-8d314f3f70d7" positionType="Float" x="90" y="305" width="270" height="15" fontSize="8.0" removeLineWhenBlank="true" vTextAlign="Middle">
+				<expression><![CDATA[$F{Observaciones}]]></expression>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			</element>
+			<element kind="staticText" uuid="61a53335-8dbc-43df-b4bf-07dedc5ff01d" x="280" y="248" width="68" height="56" fontSize="6.0" bold="false" hTextAlign="Left" vTextAlign="Middle">
+				<text><![CDATA[De 4 - 50 años
+Hombres: < 20 mm/h
+Mujeres:   < 15 mm/h
+Niños:       < 10 mm/h
+Mayores de 50 años
+Hombre:    < 30 mm/h
+Mujeres:    < 20 mm/h]]></text>
+			</element>
+		</element>
+		<element kind="staticText" uuid="4b23c148-45a8-408b-9f90-4ca1166a69ea" x="0" y="0" width="360" height="20" forecolor="#5C1D1F" fontSize="15.0" bold="true" hTextAlign="Center" vTextAlign="Top">
+			<text><![CDATA[Datos del Paciente]]></text>
+		</element>
+		<element kind="textField" uuid="153c53fa-504c-47e8-b902-ca5a6737673c" x="50" y="50" width="310" height="20" vTextAlign="Middle">
+			<expression><![CDATA[$F{nombre}]]></expression>
+		</element>
+		<element kind="textField" uuid="ae889dfc-b139-440a-8e1a-7524e0525b3d" x="50" y="70" width="310" height="20" vTextAlign="Middle">
+			<expression><![CDATA[$F{cedula}]]></expression>
+		</element>
+		<element kind="textField" uuid="4cc034de-ddf8-45c6-994f-f0c694ef8945" x="50" y="90" width="310" height="20" vTextAlign="Middle">
+			<expression><![CDATA[$F{edad}]]></expression>
+		</element>
+		<element kind="textField" uuid="6783bb97-9011-4a1f-b01e-b70ea6f09c31" x="50" y="30" width="310" height="20" pattern="MMMMM dd, yyyy" vTextAlign="Middle">
+			<expression><![CDATA[new java.util.Date()]]></expression>
+		</element>
+		<element kind="staticText" uuid="1ed9c11e-b252-4631-a99a-eb2ede561666" x="0" y="50" width="50" height="20" fontSize="10.0" bold="true" hTextAlign="Left" vTextAlign="Middle">
+			<text><![CDATA[Nombre:]]></text>
+		</element>
+		<element kind="staticText" uuid="35f54702-4ef3-462e-a3fe-14282941334e" x="0" y="30" width="50" height="20" fontSize="10.0" bold="true" hTextAlign="Left" vTextAlign="Middle">
+			<text><![CDATA[Fecha:]]></text>
+		</element>
+		<element kind="staticText" uuid="0e9cc7b8-98cd-4b7a-abc1-d55e2956352d" x="0" y="70" width="50" height="20" fontSize="10.0" bold="true" vTextAlign="Middle">
+			<text><![CDATA[Cédula:]]></text>
+		</element>
+		<element kind="staticText" uuid="933b6340-4992-4e29-83a7-7f32463b8e6b" x="0" y="90" width="50" height="20" fontSize="10.0" bold="true" vTextAlign="Middle">
+			<text><![CDATA[Edad:]]></text>
+		</element>
+	</title>
+	<pageFooter height="54" splitType="Stretch">
+		<element kind="staticText" uuid="c9992dc4-e03a-4bcb-bceb-63dce626324e" x="0" y="-1" width="359" height="54" fontSize="8.0" hTextAlign="Left" vTextAlign="Middle">
+			<text><![CDATA[Dirección: Calle 4 Entre Carrera 5 y 6, Sector Campo Alegre
+San José de Bolívar Táchira Venezuela
+Teléfono: (0424) 7234517
+RIF: J-50413383-3]]></text>
+		</element>
+	</pageFooter>
+</jasperReport>

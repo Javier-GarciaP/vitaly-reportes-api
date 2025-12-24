@@ -1,0 +1,188 @@
+<!-- Created with Jaspersoft Studio version 7.0.3.final using JasperReports Library version 7.0.3-41034ca841d452f3305ba55b9042260aaa1ab5dd  -->
+<jasperReport name="Bactereologia" language="java" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="430e7a23-a296-45e4-94ce-c3de5fa64207">
+	<query language="sql"><![CDATA[]]></query>
+	<field name="nombre" class="java.lang.String"/>
+	<field name="cedula" class="java.lang.String"/>
+	<field name="edad" class="java.lang.String"/>
+	<field name="ObservacionDirecta" class="java.lang.String"/>
+	<field name="TincionGram" class="java.lang.String"/>
+	<field name="RecuentoColonias" class="java.lang.String"/>
+	<field name="Cultivo" class="java.lang.String"/>
+	<field name="CultivoHongos" class="java.lang.String"/>
+	<field name="Muestra" class="java.lang.String"/>
+	<background splitType="Stretch"/>
+	<title height="501" splitType="Stretch">
+		<element kind="staticText" uuid="6b176cc9-eab1-4bca-84a7-7e6146411bee" x="0" y="120" width="360" height="28" forecolor="#5C1D1F" fontSize="15.0" bold="true" hTextAlign="Center" vTextAlign="Top">
+			<text><![CDATA[Análisis Bacteriológico]]></text>
+		</element>
+		<element kind="line" uuid="6be70d6e-0d0d-4b54-8ea3-dc018e852cdb" x="0" y="148" width="360" height="1" forecolor="#4A90E2"/>
+		<element kind="frame" uuid="d834b3e7-9291-440a-b2bf-b4a0aa0a355b" positionType="Float" x="0" y="160" width="370" height="340" removeLineWhenBlank="true" printWhenDetailOverflows="true">
+			<element kind="staticText" uuid="d6466cd7-10ae-4a81-8b99-63dc06f4c889" positionType="Float" stretchType="ContainerBottom" x="10" y="21" width="340" height="13" removeLineWhenBlank="true" bold="true" hTextAlign="Left" vTextAlign="Middle">
+				<printWhenExpression><![CDATA[$F{ObservacionDirecta} != null]]></printWhenExpression>
+				<text><![CDATA[Observación Directa]]></text>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			</element>
+			<element kind="textField" uuid="c898aa89-574b-43b2-a199-3cc384edcd3b" positionType="Float" stretchType="ContainerBottom" x="10" y="34" width="340" height="47" removeLineWhenBlank="true">
+				<printWhenExpression><![CDATA[$F{ObservacionDirecta} != null]]></printWhenExpression>
+				<expression><![CDATA[$F{ObservacionDirecta}]]></expression>
+			</element>
+			<element kind="line" uuid="7ac6a75f-2c84-49dd-a413-1fbf871eae82" positionType="Float" stretchType="ContainerBottom" x="1" y="81" width="359" height="1" removeLineWhenBlank="true">
+				<printWhenExpression><![CDATA[$F{ObservacionDirecta} != null]]></printWhenExpression>
+				<pen lineWidth="0.5" lineStyle="Dashed"/>
+			</element>
+			<element kind="line" uuid="0ae49dd7-8cc7-4d17-862b-a7f091a7bcb1" positionType="Float" stretchType="ContainerBottom" x="0" y="21" width="360" height="1" removeLineWhenBlank="true">
+				<printWhenExpression><![CDATA[$F{ObservacionDirecta} != null]]></printWhenExpression>
+				<pen lineWidth="0.5" lineStyle="Dashed"/>
+			</element>
+			<element kind="line" uuid="305755e4-5e57-4d07-b6d2-f21ebc6f7238" positionType="Float" stretchType="ContainerBottom" x="359" y="22" width="1" height="59" removeLineWhenBlank="true">
+				<printWhenExpression><![CDATA[$F{ObservacionDirecta} != null]]></printWhenExpression>
+				<pen lineWidth="0.5" lineStyle="Dashed"/>
+			</element>
+			<element kind="line" uuid="e5a8803a-04ef-44a9-a7bd-969eff805a35" positionType="Float" stretchType="ContainerBottom" x="0" y="21" width="1" height="61" removeLineWhenBlank="true">
+				<printWhenExpression><![CDATA[$F{ObservacionDirecta} != null]]></printWhenExpression>
+				<pen lineWidth="0.5" lineStyle="Dashed"/>
+			</element>
+			<element kind="staticText" uuid="90548588-537d-4b57-9195-47bfcf99f182" positionType="Float" stretchType="ContainerBottom" x="10" y="85" width="340" height="13" removeLineWhenBlank="true" bold="true" hTextAlign="Left" vTextAlign="Middle">
+				<printWhenExpression><![CDATA[$F{TincionGram} != null]]></printWhenExpression>
+				<text><![CDATA[Tincion Gram]]></text>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			</element>
+			<element kind="textField" uuid="d1a1b0cf-a916-4fc1-8773-92677729ae6e" positionType="Float" stretchType="ContainerBottom" x="10" y="98" width="340" height="47" removeLineWhenBlank="true">
+				<printWhenExpression><![CDATA[$F{TincionGram} != null]]></printWhenExpression>
+				<expression><![CDATA[$F{TincionGram}]]></expression>
+			</element>
+			<element kind="line" uuid="474dce5c-520e-4d53-9d54-cdd74184efb9" positionType="Float" stretchType="ContainerBottom" x="1" y="145" width="359" height="1" removeLineWhenBlank="true">
+				<printWhenExpression><![CDATA[$F{ObservacionDirecta} != null]]></printWhenExpression>
+				<pen lineWidth="0.5" lineStyle="Dashed"/>
+			</element>
+			<element kind="line" uuid="a05ea615-7261-4bd1-ab8e-539685ccefa3" positionType="Float" stretchType="ContainerBottom" x="0" y="85" width="360" height="1" removeLineWhenBlank="true">
+				<printWhenExpression><![CDATA[$F{TincionGram} != null]]></printWhenExpression>
+				<pen lineWidth="0.5" lineStyle="Dashed"/>
+			</element>
+			<element kind="line" uuid="1d255bd4-938e-411b-9fa9-db54f3a5dc75" positionType="Float" stretchType="ContainerBottom" x="359" y="86" width="1" height="59" removeLineWhenBlank="true">
+				<printWhenExpression><![CDATA[$F{TincionGram} != null]]></printWhenExpression>
+				<pen lineWidth="0.5" lineStyle="Dashed"/>
+			</element>
+			<element kind="line" uuid="4a1f6f45-7584-4375-b0e7-5458553ee133" positionType="Float" stretchType="ContainerBottom" x="0" y="85" width="1" height="61" removeLineWhenBlank="true">
+				<printWhenExpression><![CDATA[$F{TincionGram} != null]]></printWhenExpression>
+				<pen lineWidth="0.5" lineStyle="Dashed"/>
+			</element>
+			<element kind="staticText" uuid="128b4258-f62d-405f-bfea-d98a5710bd6f" positionType="Float" stretchType="ContainerBottom" x="10" y="149" width="340" height="13" removeLineWhenBlank="true" bold="true" hTextAlign="Left" vTextAlign="Middle">
+				<printWhenExpression><![CDATA[$F{RecuentoColonias} != null]]></printWhenExpression>
+				<text><![CDATA[Recuento Colonias]]></text>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			</element>
+			<element kind="textField" uuid="9ef388a8-e8b5-4d12-90fe-a5949b42fc16" positionType="Float" stretchType="ContainerBottom" x="10" y="162" width="340" height="47" removeLineWhenBlank="true">
+				<printWhenExpression><![CDATA[$F{RecuentoColonias} != null]]></printWhenExpression>
+				<expression><![CDATA[$F{RecuentoColonias}]]></expression>
+			</element>
+			<element kind="line" uuid="f28316e3-948a-4d06-bbe3-411b767f187d" positionType="Float" stretchType="ContainerBottom" x="1" y="209" width="359" height="1" removeLineWhenBlank="true">
+				<printWhenExpression><![CDATA[$F{RecuentoColonias} != null]]></printWhenExpression>
+				<pen lineWidth="0.5" lineStyle="Dashed"/>
+			</element>
+			<element kind="line" uuid="420ba895-7bc6-4eb6-9792-7fec1c29fe01" positionType="Float" stretchType="ContainerBottom" x="0" y="149" width="360" height="1" removeLineWhenBlank="true">
+				<printWhenExpression><![CDATA[$F{RecuentoColonias} != null]]></printWhenExpression>
+				<pen lineWidth="0.5" lineStyle="Dashed"/>
+			</element>
+			<element kind="line" uuid="fc0c4fa6-945b-4c1b-a9a0-1980cafb3c37" positionType="Float" stretchType="ContainerBottom" x="359" y="150" width="1" height="59" removeLineWhenBlank="true">
+				<printWhenExpression><![CDATA[$F{RecuentoColonias} != null]]></printWhenExpression>
+				<pen lineWidth="0.5" lineStyle="Dashed"/>
+			</element>
+			<element kind="line" uuid="21d8a16c-066b-4927-9a2a-2bd0bfb49332" positionType="Float" stretchType="ContainerBottom" x="0" y="149" width="1" height="61" removeLineWhenBlank="true">
+				<printWhenExpression><![CDATA[$F{RecuentoColonias} != null]]></printWhenExpression>
+				<pen lineWidth="0.5" lineStyle="Dashed"/>
+			</element>
+			<element kind="staticText" uuid="2082b632-32d7-4956-b446-e307436b9f36" positionType="Float" stretchType="ContainerBottom" x="10" y="213" width="340" height="13" removeLineWhenBlank="true" bold="true" hTextAlign="Left" vTextAlign="Middle">
+				<printWhenExpression><![CDATA[$F{Cultivo} != null]]></printWhenExpression>
+				<text><![CDATA[Cultivo]]></text>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			</element>
+			<element kind="textField" uuid="f7cc0d85-f213-4463-a51b-bc405f3c9c91" positionType="Float" stretchType="ContainerBottom" x="10" y="226" width="340" height="47" removeLineWhenBlank="true">
+				<printWhenExpression><![CDATA[$F{Cultivo} != null]]></printWhenExpression>
+				<expression><![CDATA[$F{Cultivo}]]></expression>
+			</element>
+			<element kind="line" uuid="84e72cad-ea0e-4dbf-94ec-91065a33d66e" positionType="Float" stretchType="ContainerBottom" x="1" y="273" width="359" height="1" removeLineWhenBlank="true">
+				<printWhenExpression><![CDATA[$F{Cultivo} != null]]></printWhenExpression>
+				<pen lineWidth="0.5" lineStyle="Dashed"/>
+			</element>
+			<element kind="line" uuid="0089724e-98e4-43d3-9cd0-87936c1b5f57" positionType="Float" stretchType="ContainerBottom" x="0" y="213" width="360" height="1" removeLineWhenBlank="true">
+				<printWhenExpression><![CDATA[$F{Cultivo} != null]]></printWhenExpression>
+				<pen lineWidth="0.5" lineStyle="Dashed"/>
+			</element>
+			<element kind="line" uuid="840ca563-e5a6-4537-9b01-9c99ff1e676a" positionType="Float" stretchType="ContainerBottom" x="359" y="214" width="1" height="59" removeLineWhenBlank="true">
+				<printWhenExpression><![CDATA[$F{Cultivo} != null]]></printWhenExpression>
+				<pen lineWidth="0.5" lineStyle="Dashed"/>
+			</element>
+			<element kind="line" uuid="127a5ec4-f11a-43e5-9499-700dc6d914d2" positionType="Float" stretchType="ContainerBottom" x="0" y="213" width="1" height="61" removeLineWhenBlank="true">
+				<printWhenExpression><![CDATA[$F{Cultivo} != null]]></printWhenExpression>
+				<pen lineWidth="0.5" lineStyle="Dashed"/>
+			</element>
+			<element kind="staticText" uuid="f9ecc870-b681-4489-8630-cb054d0c98bb" positionType="Float" stretchType="ContainerBottom" x="10" y="278" width="340" height="13" removeLineWhenBlank="true" bold="true" hTextAlign="Left" vTextAlign="Middle">
+				<printWhenExpression><![CDATA[$F{CultivoHongos} != null]]></printWhenExpression>
+				<text><![CDATA[Cultivo Hongos]]></text>
+				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+			</element>
+			<element kind="textField" uuid="ff2007cd-6c2a-4ca6-ba12-25ae2fb9f16a" positionType="Float" stretchType="ContainerBottom" x="10" y="291" width="340" height="47" removeLineWhenBlank="true">
+				<printWhenExpression><![CDATA[$F{CultivoHongos} != null]]></printWhenExpression>
+				<expression><![CDATA[$F{CultivoHongos}]]></expression>
+			</element>
+			<element kind="line" uuid="fb912137-aefc-4d0e-823b-16b7f010b072" positionType="Float" stretchType="ContainerBottom" x="1" y="338" width="359" height="1" removeLineWhenBlank="true">
+				<printWhenExpression><![CDATA[$F{CultivoHongos} != null]]></printWhenExpression>
+				<pen lineWidth="0.5" lineStyle="Dashed"/>
+			</element>
+			<element kind="line" uuid="f1cfeedf-46c6-41ee-a9e4-754f1327b6bf" positionType="Float" stretchType="ContainerBottom" x="0" y="278" width="360" height="1" removeLineWhenBlank="true">
+				<printWhenExpression><![CDATA[$F{CultivoHongos} != null]]></printWhenExpression>
+				<pen lineWidth="0.5" lineStyle="Dashed"/>
+			</element>
+			<element kind="line" uuid="fcd4d9f2-3adc-4a2e-b907-7fab33129c13" positionType="Float" stretchType="ContainerBottom" x="359" y="279" width="1" height="59" removeLineWhenBlank="true">
+				<printWhenExpression><![CDATA[$F{CultivoHongos} != null]]></printWhenExpression>
+				<pen lineWidth="0.5" lineStyle="Dashed"/>
+			</element>
+			<element kind="line" uuid="94aa53bd-661c-450f-8e9a-8765d4f9aa7e" positionType="Float" stretchType="ContainerBottom" x="0" y="278" width="1" height="61" removeLineWhenBlank="true">
+				<printWhenExpression><![CDATA[$F{CultivoHongos} != null]]></printWhenExpression>
+				<pen lineWidth="0.5" lineStyle="Dashed"/>
+			</element>
+			<element kind="staticText" uuid="67d5940a-acd2-428c-81eb-39feacc692f4" positionType="Float" stretchType="ContainerBottom" x="10" y="0" width="90" height="20" removeLineWhenBlank="true" bold="true">
+				<text><![CDATA[Muestra:]]></text>
+			</element>
+			<element kind="textField" uuid="2c1b8ee0-c1b7-4fca-b8aa-0ad47e756c88" positionType="Float" stretchType="ContainerBottom" x="100" y="0" width="259" height="20" removeLineWhenBlank="true">
+				<expression><![CDATA[$F{Muestra}]]></expression>
+			</element>
+		</element>
+		<element kind="staticText" uuid="7dbb104d-a761-4813-98a1-7ac185943736" x="0" y="0" width="360" height="20" forecolor="#5C1D1F" fontSize="15.0" bold="true" hTextAlign="Center" vTextAlign="Top">
+			<text><![CDATA[Datos del Paciente]]></text>
+		</element>
+		<element kind="textField" uuid="e2882942-e6a5-49bd-95d2-044c5fa9cd24" x="50" y="50" width="310" height="20" vTextAlign="Middle">
+			<expression><![CDATA[$F{nombre}]]></expression>
+		</element>
+		<element kind="textField" uuid="43990ea8-5428-4fcf-9e4a-4121379bb72f" x="50" y="70" width="310" height="20" vTextAlign="Middle">
+			<expression><![CDATA[$F{cedula}]]></expression>
+		</element>
+		<element kind="textField" uuid="3239d33d-3631-49a4-9ac7-da2e847b47b1" x="50" y="90" width="310" height="20" vTextAlign="Middle">
+			<expression><![CDATA[$F{edad}]]></expression>
+		</element>
+		<element kind="textField" uuid="68809d9d-4798-4ffd-9678-54c885879791" x="50" y="30" width="310" height="20" pattern="MMMMM dd, yyyy" vTextAlign="Middle">
+			<expression><![CDATA[new java.util.Date()]]></expression>
+		</element>
+		<element kind="staticText" uuid="aa4e295b-2be5-4e46-a3f6-9525728d3a4e" x="0" y="50" width="50" height="20" fontSize="10.0" bold="true" hTextAlign="Left" vTextAlign="Middle">
+			<text><![CDATA[Nombre:]]></text>
+		</element>
+		<element kind="staticText" uuid="6f2840c2-0366-4227-a9cf-97fa88025572" x="0" y="30" width="50" height="20" fontSize="10.0" bold="true" hTextAlign="Left" vTextAlign="Middle">
+			<text><![CDATA[Fecha:]]></text>
+		</element>
+		<element kind="staticText" uuid="a3174620-a062-4917-90fc-84c744ecc5a0" x="0" y="70" width="50" height="20" fontSize="10.0" bold="true" vTextAlign="Middle">
+			<text><![CDATA[Cédula:]]></text>
+		</element>
+		<element kind="staticText" uuid="1781d1e6-04b0-42e7-a6bc-05e0b41f562c" x="0" y="90" width="50" height="20" fontSize="10.0" bold="true" vTextAlign="Middle">
+			<text><![CDATA[Edad:]]></text>
+		</element>
+	</title>
+	<pageFooter height="54" splitType="Stretch">
+		<element kind="staticText" uuid="b482cc18-7a09-46b8-9d51-dc782b02810d" x="0" y="-1" width="359" height="54" fontSize="8.0" hTextAlign="Left" vTextAlign="Middle">
+			<text><![CDATA[Dirección: Calle 4 Entre Carrera 5 y 6, Sector Campo Alegre
+San José de Bolívar Táchira Venezuela
+Teléfono: (0424) 7234517
+RIF: J-50413383-3]]></text>
+		</element>
+	</pageFooter>
+</jasperReport>

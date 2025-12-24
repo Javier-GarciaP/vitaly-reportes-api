@@ -1,0 +1,37 @@
+<!-- Created with Jaspersoft Studio version 7.0.3.final using JasperReports Library version 7.0.3-41034ca841d452f3305ba55b9042260aaa1ab5dd  -->
+<jasperReport name="PortadaGeneral" language="java" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="d5a2b6f3-68ba-4209-9371-88f0487db841">
+	<parameter name="logoPath" class="java.lang.String"/>
+	<query language="sql"><![CDATA[]]></query>
+	<field name="paciente" class="java.lang.String"/>
+	<field name="cedula" class="java.lang.String"/>
+	<field name="edad" class="java.lang.String"/>
+	<background splitType="Stretch"/>
+	<title height="347" splitType="Stretch">
+		<element kind="image" uuid="ec68c94a-50b0-460c-8bc4-bcd189925ee4" x="10" y="0" width="340" height="340" onErrorType="Icon">
+			<expression><![CDATA[$P{logoPath}]]></expression>
+		</element>
+	</title>
+	<pageFooter height="208" splitType="Stretch">
+		<element kind="image" uuid="649ff545-3d9e-4d66-8df6-037e5455cc4e" x="230" y="19" width="140" height="141" onErrorType="Icon">
+			<expression><![CDATA["src/main/resources/recursos/LosPicapiedras.jpeg"]]></expression>
+		</element>
+		<element kind="staticText" uuid="84ed2f2e-1f8c-45b7-bc36-d1c6665296a0" x="10" y="50" width="70" height="19" fontSize="15.0" bold="true">
+			<text><![CDATA[Paciente:]]></text>
+		</element>
+		<element kind="staticText" uuid="9a9ea165-e2dc-456e-9591-d7a76203d6a0" x="10" y="69" width="70" height="20" fontSize="15.0" bold="true">
+			<text><![CDATA[Cedula:]]></text>
+		</element>
+		<element kind="staticText" uuid="a0ec7f0b-991c-4f74-aba9-ec9320df53f5" x="10" y="89" width="70" height="20" fontSize="15.0" bold="true">
+			<text><![CDATA[Edad:]]></text>
+		</element>
+		<element kind="textField" uuid="f342d4e9-6816-4e74-a26c-5d8a2fb9cbd5" x="80" y="50" width="140" height="19" fontSize="15.0">
+			<expression><![CDATA[$F{paciente}]]></expression>
+		</element>
+		<element kind="textField" uuid="9a06fd51-0079-4603-9b4c-ca5a6915e458" x="80" y="69" width="140" height="20" fontSize="15.0">
+			<expression><![CDATA[$F{cedula}]]></expression>
+		</element>
+		<element kind="textField" uuid="c034e97f-00d8-48b5-b3c2-aae6467ee7d9" x="80" y="89" width="140" height="20" fontSize="15.0">
+			<expression><![CDATA[$F{edad}]]></expression>
+		</element>
+	</pageFooter>
+</jasperReport>

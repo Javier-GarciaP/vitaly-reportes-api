@@ -1,0 +1,75 @@
+<!-- Created with Jaspersoft Studio version 7.0.3.final using JasperReports Library version 7.0.3-41034ca841d452f3305ba55b9042260aaa1ab5dd  -->
+<jasperReport name="Miscelaneos" language="java" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="019f829c-bda0-4460-aece-00c211f90106">
+	<query language="sql"><![CDATA[]]></query>
+	<field name="ExamenSolicitado" class="java.lang.String"/>
+	<field name="Metodo" class="java.lang.String"/>
+	<field name="Muestra" class="java.lang.String"/>
+	<field name="Resultado" class="java.lang.String"/>
+	<field name="nombre" class="java.lang.String"/>
+	<field name="cedula" class="java.lang.String"/>
+	<field name="edad" class="java.lang.String"/>
+	<background splitType="Stretch"/>
+	<title height="457" splitType="Stretch">
+		<element kind="staticText" uuid="54d4533e-0a76-4f25-8d0b-e0d6034aad8e" x="0" y="120" width="360" height="28" forecolor="#5C1D1F" fontSize="15.0" bold="true" hTextAlign="Center" vTextAlign="Top">
+			<text><![CDATA[Misceláneos]]></text>
+		</element>
+		<element kind="line" uuid="0309762e-c0d4-4c7a-98ae-0b4566b8b383" x="0" y="148" width="360" height="1" forecolor="#4A90E2"/>
+		<element kind="staticText" uuid="b20d8c0d-67f5-49b6-9f34-a2272a1baf5c" x="0" y="160" width="100" height="20" bold="true" vTextAlign="Middle">
+			<text><![CDATA[Exámen Solicitado:]]></text>
+		</element>
+		<element kind="staticText" uuid="98482b7e-6c4d-4869-b63e-785d28e19f53" x="0" y="180" width="100" height="20" bold="true" vTextAlign="Middle">
+			<text><![CDATA[Método:]]></text>
+		</element>
+		<element kind="staticText" uuid="5ec0a8ca-d9f7-4839-bf33-be7747bc4146" x="0" y="200" width="100" height="20" bold="true" vTextAlign="Middle">
+			<text><![CDATA[Muestra:]]></text>
+		</element>
+		<element kind="textField" uuid="ff7309b7-e55c-41ae-8406-e67da1918ab5" x="100" y="160" width="260" height="20" vTextAlign="Middle">
+			<expression><![CDATA[$F{ExamenSolicitado}]]></expression>
+		</element>
+		<element kind="textField" uuid="e31e6956-209b-43f9-be53-1cab84336015" x="100" y="180" width="260" height="20" vTextAlign="Middle">
+			<expression><![CDATA[$F{Metodo}]]></expression>
+		</element>
+		<element kind="textField" uuid="491c7f26-e80c-44c6-81dc-c014a0300817" x="100" y="200" width="260" height="20" vTextAlign="Middle">
+			<expression><![CDATA[$F{Muestra}]]></expression>
+		</element>
+		<element kind="line" uuid="902a3436-0f0d-453e-893f-226f886506ea" x="-1" y="230" width="361" height="1" forecolor="#4A90E2"/>
+		<element kind="textField" uuid="35636d89-080a-4030-97d4-3c922a75e217" x="0" y="240" width="360" height="210">
+			<expression><![CDATA[$F{Resultado}]]></expression>
+		</element>
+		<element kind="staticText" uuid="a009fbdb-e41b-4495-93c9-fd5157be5ae9" x="0" y="0" width="360" height="20" forecolor="#5C1D1F" fontSize="15.0" bold="true" hTextAlign="Center" vTextAlign="Top">
+			<text><![CDATA[Datos del Paciente]]></text>
+		</element>
+		<element kind="textField" uuid="9ddfd9fe-8cbd-41ac-b4b6-45b6558177d7" x="50" y="50" width="310" height="20" vTextAlign="Middle">
+			<expression><![CDATA[$F{nombre}]]></expression>
+		</element>
+		<element kind="textField" uuid="65d1b3b6-b543-4848-b8e0-1268366837b7" x="50" y="70" width="310" height="20" vTextAlign="Middle">
+			<expression><![CDATA[$F{cedula}]]></expression>
+		</element>
+		<element kind="textField" uuid="7f38f86d-66ec-46a3-b439-2ee99d16e29e" x="50" y="90" width="310" height="20" vTextAlign="Middle">
+			<expression><![CDATA[$F{edad}]]></expression>
+		</element>
+		<element kind="textField" uuid="a26cb24a-0f04-4d09-a900-58bf054e13ff" x="50" y="30" width="310" height="20" pattern="MMMMM dd, yyyy" vTextAlign="Middle">
+			<expression><![CDATA[new java.util.Date()]]></expression>
+		</element>
+		<element kind="staticText" uuid="5e542256-c8fa-4e0d-a923-8d4048038ceb" x="0" y="50" width="50" height="20" fontSize="10.0" bold="true" hTextAlign="Left" vTextAlign="Middle">
+			<text><![CDATA[Nombre:]]></text>
+		</element>
+		<element kind="staticText" uuid="902eff04-c258-4979-82e0-d7828a3106c4" x="0" y="30" width="50" height="20" fontSize="10.0" bold="true" hTextAlign="Left" vTextAlign="Middle">
+			<text><![CDATA[Fecha:]]></text>
+		</element>
+		<element kind="staticText" uuid="49ab1f21-6c0c-4313-91f8-9bcd3048d8d1" x="0" y="70" width="50" height="20" fontSize="10.0" bold="true" vTextAlign="Middle">
+			<text><![CDATA[Cédula:]]></text>
+		</element>
+		<element kind="staticText" uuid="dc801e66-2d72-47cd-9e42-01d4486cb51e" x="0" y="90" width="50" height="20" fontSize="10.0" bold="true" vTextAlign="Middle">
+			<text><![CDATA[Edad:]]></text>
+		</element>
+	</title>
+	<pageFooter height="54" splitType="Stretch">
+		<element kind="staticText" uuid="b62c9e41-1363-4f10-8579-1ba7f584e3ec" x="0" y="-1" width="359" height="54" fontSize="8.0" hTextAlign="Left" vTextAlign="Middle">
+			<text><![CDATA[Dirección: Calle 4 Entre Carrera 5 y 6, Sector Campo Alegre
+San José de Bolívar Táchira Venezuela
+Teléfono: (0424) 7234517
+RIF: J-50413383-3]]></text>
+		</element>
+	</pageFooter>
+</jasperReport>
