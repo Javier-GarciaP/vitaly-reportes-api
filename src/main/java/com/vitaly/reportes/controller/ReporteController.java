@@ -94,6 +94,8 @@ public class ReporteController {
 
             // 6. COMPILACIÓN Y GENERACIÓN DEL PDF
             // Compilar JRXML -> JasperReport
+            net.sf.jasperreports.engine.util.JRProperties.setProperty("net.sf.jasperreports.xpath.adapter", "net.sf.jasperreports.engine.util.xml.XalanXPathExecuterFactory");
+            System.setProperty("net.sf.jasperreports.compiler.xml.validation", "false");
             JasperReport jasperReport = JasperCompileManager.compileReport(reportStream);
 
             // Llenar Reporte -> JasperPrint
