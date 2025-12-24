@@ -1,4 +1,4 @@
-package com.tuempresa.model;
+package com.tuempresa.reportservice.model;
 
 import lombok.Data;
 import java.util.Map;
